@@ -128,12 +128,8 @@ function btn3() {
 
 
 
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.section');
-    let touchStartY;
 
     window.addEventListener('wheel', handleWheel);
     window.addEventListener('touchstart', handleTouchStart);
@@ -142,19 +138,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function handleWheel(event) {
         const screenSize = window.innerWidth;
+        const deltaY = event.deltaY;
 
         if (screenSize <= 600) {
             // Em telas pequenas, inverte o comportamento
-            if (event.deltaY > 0) {
+            if (deltaY > 0) {
                 // Scroll para baixo
-                scrollToSection('prev');
+                scrollToSection('next');
             } else {
                 // Scroll para cima
-                scrollToSection('next');
+                scrollToSection('prev');
             }
         } else {
             // Em telas maiores, mantém o comportamento padrão
-            if (event.deltaY > 0) {
+            if (deltaY > 0) {
                 // Scroll para baixo
                 scrollToSection('next');
             } else {
@@ -163,6 +160,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
+
+    let touchStartY;
 
     function handleTouchStart(event) {
         touchStartY = event.touches[0].clientY;
@@ -216,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const scrollPosition = window.scrollY || window.pageYOffset;
 
         for (let i = 0; i < sections.length; i++) {
-            const sectionTop = sections[i].offsetTop;
+            const sectionTop = sections[i].offsetTop - (sections[i].offsetHeight / 2); // Ajuste para o centro da seção
             if (scrollPosition >= sectionTop) {
                 currentSection = i;
             }

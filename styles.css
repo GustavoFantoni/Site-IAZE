@@ -16,6 +16,7 @@ body {
     background: linear-gradient(to right, #FFFFFF 50%, var(--cor-fundo) 50%);
     font-family: 'Nunito', sans-serif;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
@@ -313,7 +314,7 @@ body.no-scroll {
 /*------------------------------------ SCROLL 3 ------------------------------------*/
     #scrll3 {
         height: 100vh;
-        scroll-snap-align: start;
+
         overflow-y: scroll;
         margin-bottom: 50vh;
         overflow: hidden;
