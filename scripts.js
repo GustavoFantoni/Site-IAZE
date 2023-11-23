@@ -8,6 +8,54 @@ function active() {
 }
 
 
+
+
+
+
+let atvButton = document.querySelector("button.ativa-contatos");
+atvButton.addEventListener("click", mostrarRedes);
+
+let btnW = document.querySelector(".btnW");
+let btnF = document.querySelector(".btnF");
+let btnI = document.querySelector(".btnI");
+
+function mostrarRedes() {
+    btnW.classList.toggle('btnW-Actived');
+    btnF.classList.toggle('btnF-Actived');
+    btnI.classList.toggle('btnI-Actived');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let btnText1 = document.querySelector("button.text-1");
 let btnText2 = document.querySelector("button.text-2");
 let btnText3 = document.querySelector("button.text-3");
@@ -45,6 +93,37 @@ function btn3() {
     btnText3.style.transition = "500ms";
     textQS.innerHTML = text3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
