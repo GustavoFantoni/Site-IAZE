@@ -74,21 +74,21 @@ btnText3.addEventListener("click", btn3);
 
 function btn1() {
     btnText1.style.backgroundColor = "#ffffff";
-    btnText2.style.backgroundColor = "#f3d7da";
-    btnText3.style.backgroundColor = "#f3d7da";
+    btnText2.style.backgroundColor = "#82c0df";
+    btnText3.style.backgroundColor = "#82c0df";
     btnText1.style.transition = "500ms";
     textQS.innerHTML = text1;
 }
 function btn2() {
-    btnText1.style.backgroundColor = "#f3d7da";
+    btnText1.style.backgroundColor = "#82c0df";
     btnText2.style.backgroundColor = "#ffffff";
-    btnText3.style.backgroundColor = "#f3d7da";
+    btnText3.style.backgroundColor = "#82c0df";
     btnText2.style.transition = "500ms";
     textQS.innerHTML = text2;
 }
 function btn3() {
-    btnText1.style.backgroundColor = "#f3d7da";
-    btnText2.style.backgroundColor = "#f3d7da";
+    btnText1.style.backgroundColor = "#82c0df";
+    btnText2.style.backgroundColor = "#82c0df";
     btnText3.style.backgroundColor = "#ffffff";
     btnText3.style.transition = "500ms";
     textQS.innerHTML = text3;

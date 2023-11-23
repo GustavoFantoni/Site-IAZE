@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #FFFFFF 50%, #E6D8DA 50%);
+    background: linear-gradient(to right, #FFFFFF 50%, var(--cor-fundo) 50%);
     font-family: 'Nunito', sans-serif;
     overflow: hidden;
 }
@@ -19,39 +19,13 @@ ul {
 }
 /*------------------------------------ PRÉ DEFINIÇÕES ------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+:root {
+    --cor-fundo: #caf4fd;
+    --botoes: #68a7cf;
+    --fonte-escura: #4e8ebf;
+    --hover-font: #add3e6;
+    --back-button: #82c0df;
+  }
 
 
 
@@ -85,11 +59,11 @@ ul {
         list-style: none;
         width: 100%;
         line-height: 50px;
-        color: #A86F7A;
+        color: var(--fonte-escura);
         font-size: 14pt;
     }
     li:hover{
-        color: #c7b6b8;
+        color: var(--hover-font);
     }
     .btn-act{
         display: none;
@@ -115,7 +89,7 @@ ul {
         font-size: 100px;
     }
     .iaze {
-        color: #A86F7A;
+        color: var(--botoes);
     }
     .bebe {
         color: #FFFFFF;
@@ -123,34 +97,6 @@ ul {
     /*------------------------------------ LOGO AREA ------------------------------------*/
 
     /*------------------------------------ PARTE DE BAIXO HOME ------------------------------------*/
-    .left-area-home {
-        width: 50%;
-        display: flex;
-        justify-content: space-around;  
-        position: absolute;
-        bottom: 50px;
-    }
-    .left-area-home button {
-        width: 200px;
-        height: 50px;
-        background-color: transparent;
-        border: 1px solid #A86F7A;
-        color: #A86F7A;
-        font-size: 14pt;
-        transition: 300ms;
-    }
-    .link-varejo {
-        border-radius: 15px 0 0 15px;
-    }
-    .link-atacado {
-        border-radius: 0 15px 15px 0;
-    }
-    .left-area-home button:hover {
-        background-color: #A86F7A;
-        color: #ffffff;
-        transition: 300ms;
-    }
-
 
     /*------Right Area------*/
     .ativa-contatos {
@@ -259,32 +205,32 @@ ul {
     .buttons-QS button {
         font-size: 14pt;
         padding: 10px;
-        color: #A86F7A;
+        color: #4e8ebf;
         margin: -2px;
         margin-bottom: 5%;
     }
     .text-1 {
         border-radius: 15px 0 0 15px;
         border-right: none;
-        border-top: 1px solid#f3d7da;
-        border-left: 1px solid#f3d7da;
-        border-bottom: 1px solid#f3d7da;
+        border-top: 1px solid  var(--back-button);
+        border-left: 1px solid var(--back-button);
+        border-bottom: 1px solid var(--back-button);
         background-color: #ffffff;
     }
     .text-2 {
         border-left: none;
         border-right: none;
-        border-top: 1px solid#f3d7da;
-        border-bottom: 1px solid#f3d7da;
-        background-color: #f3d7da;
+        border-top: 1px solid var(--back-button);
+        border-bottom: 1px solid var(--back-button);
+        background-color:  var(--back-button);
     }
     .text-3 {
         border-radius: 0 15px 15px 0;
         border-left: none;
-        border-top: 1px solid#f3d7da;
-        border-bottom: 1px solid#f3d7da;
-        border-right: 1px solid#f3d7da;
-        background-color: #f3d7da;
+        border-top: 1px solid var(--back-button);
+        border-bottom: 1px solid var(--back-button);
+        border-right: 1px solid var(--back-button);
+        background-color:  var(--back-button);
     }
     .text-area-QS {
         display: flex;
@@ -370,7 +316,7 @@ ul {
             top: -11px;
             display: block;
             height: 500px;
-            background-color: #A86F7A;
+            background-color: var(--back-button);
             width: 50%;
             border-radius: 25px;
             
@@ -396,7 +342,7 @@ ul {
             text-align: left;
         }
         li:hover{
-            color: #c7b6b8;
+            color: var(--hover-font);
             transition: 300ms;
         }
         .ativa-contatos {
@@ -412,7 +358,7 @@ ul {
             background-color: transparent;
             border: none;
             font-size: 35pt;
-            color: #A86F7A;
+            color: #68a8cfb9;
             transition: 500ms;
         }
         .btn-act-active {
@@ -462,25 +408,13 @@ ul {
 
     @media screen and (max-width: 650px) {
         /*------------------------------------ SCROLL 1 ------------------------------------*/
-        .left-area-home  {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-        .link-varejo {
-            border-radius: 15px 0 0 15px;
-        }
-        .link-atacado {
-            margin-top: 5%;
-            border-radius: 0 15px 15px 0;
-        }
+    
         .center-home-logo{
             width: 100%;
             display:flex;
             justify-content: center;
         }
         .logo{
-            font-family: "Nova Slim", sans-serif;
             font-size: 60px;
         }
         .right-area-home{
@@ -565,7 +499,7 @@ ul {
             width: 100%;
             font-size: 8pt;
             padding: 10px;
-            color: #A86F7A;
+
             margin: -2px;
             margin-bottom: 5%;
 
@@ -589,12 +523,7 @@ ul {
             text-align: center;
         }
         .bebe {
-            color: #A86F7A;
-        }
-        .left-area-home button {
-            width: 100px;
-            height: 50px;
-            font-size: 10pt;
+            color: var(--botoes);
         }
         .buttons-QS button {
             font-size: 8pt;
