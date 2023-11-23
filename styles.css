@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
+
+/*Scroll Snapping*/
+
+/*------------------------------------ PRÉ DEFINIÇÕES ------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FFFFFF 50%, #E6D8DA 50%);
+    font-family: 'Nunito', sans-serif;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+}
+/*------------------------------------ PRÉ DEFINIÇÕES ------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------ SCROLL 1 ------------------------------------*/
+
+#scrll1-1 {
+    scroll-snap-align: start;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+/*------------------------------------ NAVBAR ------------------------------------*/
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    margin-top: 2%;
+}
+.menu-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-around; 
+    height: 50px;
+}
+li {
+    list-style: none;
+    width: 100%;
+    line-height: 50px;
+    color: #A86F7A;
+    font-size: 14pt;
+}
+li:hover{
+    color: #c7b6b8;
+}
+
+
+.btn-act{
+    display: none;
+}
+
+/*------------------------------------ NAVBAR ------------------------------------*/
+
+
+
+
+/*------------------------------------ LOGO AREA ------------------------------------*/
+.center-home-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+.logo{
+    font-family: "Nova Slim", sans-serif;
+    font-size: 100px;
+}
+.iaze {
+    color: #A86F7A;
+}
+.bebe {
+    color: #FFFFFF;
+}
+/*------------------------------------ LOGO AREA ------------------------------------*/
+
+
+
+
+/*------------------------------------ PARTE DE BAIXO HOME ------------------------------------*/
+.left-area-home {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;  
+    position: absolute;
+    bottom: 50px;
+}
+.left-area-home button {
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid #A86F7A;
+    color: #A86F7A;
+    font-size: 14pt;
+    transition: 300ms;
+}
+.link-varejo {
+    border-radius: 15px 0 0 15px;
+}
+.link-atacado {
+    border-radius: 0 15px 15px 0;
+}
+.left-area-home button:hover {
+    background-color: #A86F7A;
+    color: #ffffff;
+    transition: 300ms;
+}
+.right-area-home{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.right-area-home img {
+    width: 30px;
+}
+/*------------------------------------ PARTE DE BAIXO HOME ------------------------------------*/
+
+
+/*------------------------------------ SCROLL 1 ------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------ SCROLL 2 ------------------------------------*/
+
+
+
+#scrll2{
+    margin-top: 200%;
+    height: 100vh;
+    display: flex;
+    scroll-snap-align: start;
+    overflow-y: scroll;
+
+}
+.left-section-QS {
+    width: 52%;
+    display: flex;
+    justify-content: right;
+}
+
+.imagem-QM {
+    width: 80%;
+    border-radius: 50px 0 0 50px;   
+    object-fit: cover;
+    margin-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.right-section-QS {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+.buttons-QS {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+}
+.buttons-QS button {
+    font-size: 14pt;
+    padding: 10px;
+    color: #A86F7A;
+    margin: -2px;
+    margin-bottom: 5%;
+
+}
+.text-1 {
+    border-radius: 15px 0 0 15px;
+    border-right: none;
+    border-top: 1px solid#f3d7da;
+    border-left: 1px solid#f3d7da;
+    border-bottom: 1px solid#f3d7da;
+    background-color: #ffffff;
+}
+.text-2 {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid#f3d7da;
+    border-bottom: 1px solid#f3d7da;
+    background-color: #f3d7da;
+}
+.text-3 {
+    border-radius: 0 15px 15px 0;
+    border-left: none;
+    border-top: 1px solid#f3d7da;
+    border-bottom: 1px solid#f3d7da;
+    border-right: 1px solid#f3d7da;
+    background-color: #f3d7da;
+}
+
+
+.text-area-QS {
+    display: flex;
+    justify-content: center;
+
+}
+.text-here {
+    width: 80%;
+    height: 500px;
+    text-align: center;
+    font-size: 12pt;
+}
+
+
+
+
+
+/*------------------------------------ SCROLL 2 ------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------ RESPONSIVIDADE ------------------------------------*/
+
+
+
+
+
+
+@media screen and (max-width: 940px) {
+
+    nav {
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        text-align: center;
+    }
+    .menu-content {
+        display: none;
+    }
+    .area-menu-actived {
+        position: fixed;
+        right: 0;
+        top: -16px;
+        display: block;
+        height: 100%;
+        background-color: #A86F7A;
+        width: 50%;
+    }
+    li {
+        list-style: none;
+        color: #ffffff;
+        font-size: 14pt;
+        margin-top: 50px;
+        transition: 300ms;  
+    }
+    li:hover{
+        color: #c7b6b8;
+        transition: 300ms;
+    }
+    .btn-act {
+        display: initial;
+        position: fixed;
+        right: 50px;
+        top: 50px;
+        background-color: transparent;
+        border: none;
+        font-size: 35pt;
+        color: #A86F7A;
+        transition: 500ms;
+    }
+    .btn-act-active {
+        position: fixed;
+        right: 60%;
+        top: 50px;
+    }
+
+
+
+
+
+
+
+/*------------------------------------ SCROLL 2 ------------------------------------*/
+
+    .left-section-QS {
+        width: 50%;
+        display: flex;
+        justify-content: left;
+        margin-left: 1%;
+    }
+    .imagem-QM {
+        width: 100%;
+        border-radius: 50px 0 0 50px;   
+    }
+    .right-section-QS {
+        width: 45%;
+    }
+    .buttons-QS {
+        width: 70%;
+        margin-left: 15%;
+        display: flex;
+        justify-content: center;
+    }
+    .buttons-QS button {
+        font-size: 10pt;
+    }
+    .text-here {
+        font-size: 10pt;
+    }
+
+
+
+
+/*------------------------------------ SCROLL 2 ------------------------------------*/
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+    .left-area-home  {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .link-varejo {
+        border-radius: 15px 0 0 15px;
+    }
+    .link-atacado {
+        margin-top: 5%;
+        border-radius: 0 15px 15px 0;
+    }
+
+
+    .center-home-logo{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+
+    }
+    .logo{
+        font-family: "Nova Slim", sans-serif;
+        font-size: 60px;
+    }
+
+
+    #scrll2{
+        flex-direction: column;
+    }
+    .text-here {
+        font-size: 8pt;
+    }
+    .buttons-QS  {
+        width: 80%;
+        margin-left: 10%;
+        font-size: 10pt;
+    }
+    .buttons-QS button {
+        font-size: 8pt;
+        padding: 5px;
+
+    }
+
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 450px) {
+    
+    .left-section-QS {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .imagem-QM {
+        width: 50%;
+        border-radius: 50px 0 0 50px;   
+        object-fit: cover;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+    .right-section-QS {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        margin-top: 5%;
+    }
+    .buttons-QS {
+        display: flex;
+        justify-content: center;
+    }
+    .buttons-QS button {
+        width: 100%;
+        font-size: 10pt;
+        padding: 10px;
+        color: #A86F7A;
+        margin: -2px;
+        margin-bottom: 5%;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    .btn-act {
+        right: 20px;
+        top: 20px;
+        font-size: 25pt;
+    }
+    .area-menu-actived {
+        width: 40%;
+    }
+    li {
+        font-size: 10pt;
+    }
+    .btn-act-active {
+        right: 60%;
+    }
+    .center-home-logo{
+        text-align: center;
+    }
+    .bebe {
+        color: #A86F7A;
+    }
+    .left-area-home button {
+        width: 100px;
+        height: 50px;
+        font-size: 10pt;
+    }
+    .buttons-QS button {
+        font-size: 8pt;
+    }
+
+}
+/*------------------------------------ RESPONSIVIDADE ------------------------------------*/
