@@ -20,7 +20,7 @@ ul {
 /*------------------------------------ PRÉ DEFINIÇÕES ------------------------------------*/
 
 :root {
-    --cor-fundo: #caf4fd;
+    --cor-fundo: #d9f5fc;
     --botoes: #68a7cf;
     --fonte-escura: #4e8ebf;
     --hover-font: #add3e6;
@@ -87,13 +87,11 @@ ul {
     .logo{
         font-family: "Nova Slim", sans-serif;
         font-size: 100px;
+        color: var(--back-button);
     }
-    .iaze {
-        color: var(--botoes);
-    }
-    .bebe {
-        color: #FFFFFF;
-    }
+
+        
+    
     /*------------------------------------ LOGO AREA ------------------------------------*/
 
     /*------------------------------------ PARTE DE BAIXO HOME ------------------------------------*/
@@ -421,6 +419,9 @@ ul {
             bottom: 20px;
             right: 20px;
         }
+        .center-home-logo{
+            margin-top: 25vh;
+        }
         /*------------------------------------ SCROLL 1 ------------------------------------*/
 
 
@@ -476,7 +477,7 @@ ul {
             height: 400px;
         }
         .btn-act-active {
-            right: 75%;
+            right: 80%;
         }
     }
 
@@ -515,6 +516,9 @@ ul {
         }
         .area-menu-actived {
             width: 70%;   
+        }
+        .btn-act-active {
+            right: 82%;
         }
         li {
             font-size: 10pt;
