@@ -1,12 +1,19 @@
 let menu = document.querySelector('ul.menu-content');
-let btn  = document.querySelector('button.btn-act');
+let btn = document.querySelector('button.btn-act');
+let overlay = document.getElementById('overlay'); // Adicionado para referenciar o overlay
+
 btn.addEventListener('click', active);
 
 function active() {
     menu.classList.toggle('area-menu-actived');
-    btn.classList.toggle('btn-act-active')
-}
+    btn.classList.toggle('btn-act-active');
 
+    // Adiciona ou remove a classe para aplicar o desfoque no overlay
+    overlay.classList.toggle('overlay-active');
+
+    // Adiciona ou remove a classe para esconder ou mostrar o scroll quando o menu está ativo
+    document.body.classList.toggle('no-scroll');
+}
 
 
 
@@ -93,12 +100,6 @@ function btn3() {
     btnText3.style.transition = "500ms";
     textQS.innerHTML = text3;
 }
-
-
-
-
-
-
 
 
 
