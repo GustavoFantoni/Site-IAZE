@@ -501,15 +501,15 @@ body.no-scroll {
         }
         .ativa-contatos {
             width: 80px;
-            bottom: 20px;
-            right: 30px;
+            bottom: 15px;
+            right: 15px;
         }
         .btn-act {
             z-index: 100;
             display: initial;
             position: fixed;
-            right: 50px;
-            top: 50px;
+            right: 15px;
+            top: 15px;
             background-color: transparent;
             border: none;
             font-size: 35pt;
@@ -584,7 +584,7 @@ body.no-scroll {
             margin-top: 25vh;
         }
         .text-here {
-            font-size: 8pt;
+            font-size: 10pt;
         }
         /*------------------------------------ SCROLL 1 ------------------------------------*/
 
@@ -690,7 +690,9 @@ body.no-scroll {
             padding: 10px;
             margin-bottom: 20px;
         }
-
+        .text-here {
+            font-size: 8pt;
+        }
 
         .text-U {
             width: 90%;
@@ -740,6 +742,9 @@ body.no-scroll {
         }
         .buttons-QS button {
             font-size: 8pt;
+        }
+        .text-here {
+            font-size: 10pt;
         }
         .text-U {
             font-size: 10pt;
