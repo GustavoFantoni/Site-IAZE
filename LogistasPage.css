@@ -33,7 +33,7 @@
 @media screen and (max-width: 1100px) {
     .return {
         position: fixed;
-        top: 15px;
+        top: 20px;
         left: 15px;
     }
     .return img {
@@ -45,7 +45,7 @@
 }
 @media screen and (max-width: 650px) {
     .link-logistas img {
-        width: 200px;
+        width: 180px;
     }
 }
 @media screen and (max-width: 400px) {
