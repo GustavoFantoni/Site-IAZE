@@ -8,10 +8,9 @@ function active() {
     menu.classList.toggle('area-menu-actived');
     btn.classList.toggle('btn-act-active');
 
-    // Adiciona ou remove a classe para aplicar o desfoque no overlay
     overlay.classList.toggle('overlay-active');
 
-    // Adiciona ou remove a classe para esconder ou mostrar o scroll quando o menu está ativo
+   
     document.body.classList.toggle('no-scroll');
 }
 

@@ -1,0 +1,55 @@
+.return {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+.return img {
+    width: 70px;
+}
+.link-logistas {
+    width: 100%;
+    display: flex;
+    line-height: 100vh;
+    justify-content: space-around;
+}
+.link-logistas {
+    width: 100%;
+}
+.link-logistas img {
+    width: 500px;
+}
+
+
+.info {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #add3e6;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .return {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+    }
+    .return img {
+        width: 50px;
+    }
+    .link-logistas img {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .link-logistas img {
+        width: 200px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .link-logistas img {
+        width: 120px;
+    }
+}
