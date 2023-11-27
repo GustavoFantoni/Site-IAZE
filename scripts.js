@@ -60,8 +60,6 @@ function mostrarRedes() {
 
 
 
-
-
 let btnText1 = document.querySelector("button.text-1");
 let btnText2 = document.querySelector("button.text-2");
 let btnText3 = document.querySelector("button.text-3");
@@ -99,6 +97,56 @@ function btn3() {
     btnText3.style.transition = "500ms";
     textQS.innerHTML = text3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let btnR = document.querySelector('button.btnR');
+let btnL = document.querySelector('button.btnL');
+btnR.addEventListener('click', right);
+btnL.addEventListener('click', left);
+let areaImagens = document.querySelector('div.carrossel');
+let imagens = ['Images/28.png', 'Images/30134.png', 'Images/30136.png', 'Images/29017.png'];
+let itensArray = 0;
+let img = document.createElement('img');
+img.setAttribute('src', imagens[itensArray]);
+areaImagens.appendChild(img);
+
+function right() {
+    img.style.opacity = 0;
+    setTimeout(() => {
+        itensArray = (itensArray + 1) % imagens.length;
+        img.setAttribute('src', imagens[itensArray]);
+        img.style.opacity = 1; 
+    }, 500); 
+}
+
+function left() {
+    img.style.opacity = 0; 
+    setTimeout(() => {
+        itensArray = (itensArray - 1 + imagens.length) % imagens.length;
+        img.setAttribute('src', imagens[itensArray]);
+        img.style.opacity = 1; 
+    }, 500); 
+}
+
+
+
 
 
 

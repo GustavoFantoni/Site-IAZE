@@ -156,17 +156,18 @@ body.no-scroll {
     }
     .btnW-Actived {
         display: initial;
-        right: 150px;
+        right: 100px;
+        bottom: 20px;
     }
     .btnI-Actived {
         display: initial;
-        right: 135px;
-        bottom: 135px;
+        right: 90px;
+        bottom: 77px;
     }
     .btnF-Actived {
         display: initial;
-        right: 50px;
-        bottom: 150px;
+        right: 40px;
+        bottom: 100px;
     }
     .right-area-home img {
         width: 30px;
@@ -390,16 +391,54 @@ body.no-scroll {
 
 
 
+/*------------------------------------ SCROLL 4 ------------------------------------*/
 
 
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+}
+.container img {
+    width: 700px;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    border-radius: 15px;
+}
 
+.btnL {
+    background-color: rgba(75, 72, 72, 0.212);
+    height: 700px;
+    position: relative;
+    left: 68px;
+    padding: 22px;
+    border: none;
+    color: white;
+    transition: 300ms;
+    border-radius: 15px 0 0 15px;
+    font-size: 25px;
+}
 
+.btnR {
+    background-color: rgba(75, 72, 72, 0.212);
+    height: 700px;
+    position: relative;
+    right: 68px;
+    padding: 22px;
+    border: none;
+    color: white;
+    transition: 300ms;
+    border-radius:  0 15px 15px  0 ;
+    font-size: 25px;
+}
+.btnL:hover, .btnR:hover {
+    background-color: rgba(75, 72, 72, 0.425);
+    transition: 300ms;
+}
 
-
-
-
-
-
+/*------------------------------------ SCROLL 4 ------------------------------------*/
 
 
 
@@ -560,6 +599,31 @@ body.no-scroll {
         }
 
         /*------------------------------------ SCROLL 3 ------------------------------------*/
+
+
+
+        /*------------------------------------ SCROLL 4 ------------------------------------*/
+        .container {
+            margin-top: 15%;
+        }
+        .container img {
+            width: 500px;
+        }
+        
+        .btnL {
+            height: 500px;
+            padding: 24px;
+            font-size: 20px;
+        }
+        .btnR {
+            height: 500px;
+            padding: 24px;
+            font-size: 20px;
+        }
+        /*------------------------------------ SCROLL 4 ------------------------------------*/
+
+
+
     }
 
     @media screen and (max-width: 650px) {
@@ -659,6 +723,29 @@ body.no-scroll {
        
 
         /*------------------------------------ SCROLL 3 ------------------------------------*/
+
+
+        /*------------------------------------ SCROLL 4 ------------------------------------*/
+        .container {
+            margin-top: 25%;
+        }
+        .container img {
+            width: 400px;
+        }
+        
+        .btnL {
+            height: 400px;
+            padding: 14px;
+            font-size: 20px;
+            left: 50px;
+        }
+        .btnR {
+            height: 400px;
+            padding: 14px;
+            font-size: 20px;
+            right: 50px;
+        }
+        /*------------------------------------ SCROLL 4 ------------------------------------*/
     }
 
     @media screen and (max-width: 450px) {
@@ -715,7 +802,22 @@ body.no-scroll {
             margin-top:20px;
         }
 
-
+        /*------------------------------------ SCROLL 4 ------------------------------------*/
+        .container {
+            
+            margin-top: 35%;
+        }
+        .container img {
+            width: 300px;
+        }
+        
+        .btnL {
+            height: 300px;
+        }
+        .btnR {
+            height: 300px;
+        }
+        /*------------------------------------ SCROLL 4 ------------------------------------*/
 
     }
 
@@ -763,6 +865,29 @@ body.no-scroll {
         .foto-30019 {
             display: none;
         }
+
+        /*------------------------------------ SCROLL 4 ------------------------------------*/
+        .container {
+            margin-top: 40%;
+        }
+        .container img {
+            width: 250px;
+            border-radius: 0;
+        }
+        
+        .btnL {
+            height: 250px;
+            padding: 10px;
+            font-size: 20px;
+            left: 0;
+        }
+        .btnR {
+            height: 250px;
+            padding: 10px;
+            font-size: 20px;
+            right: 0;
+        }
+        /*------------------------------------ SCROLL 4 ------------------------------------*/
 
     }
 
