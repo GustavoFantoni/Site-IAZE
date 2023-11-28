@@ -115,7 +115,6 @@ function btn3() {
 
 
 
-
 let btnR = document.querySelector('button.btnR');
 let btnL = document.querySelector('button.btnL');
 btnR.addEventListener('click', right);
@@ -123,6 +122,15 @@ btnL.addEventListener('click', left);
 let areaImagens = document.querySelector('div.carrossel');
 let imagens = ['Images/28.png', 'Images/30134.png', 'Images/30136.png', 'Images/29017.png'];
 let itensArray = 0;
+
+// Pré-carrega as imagens
+let imagensCarregadas = [];
+for (let i = 0; i < imagens.length; i++) {
+    let img = new Image();
+    img.src = imagens[i];
+    imagensCarregadas.push(img);
+}
+
 let img = document.createElement('img');
 img.setAttribute('src', imagens[itensArray]);
 areaImagens.appendChild(img);
@@ -150,12 +158,37 @@ function left() {
 
 
 
+let im1 = document.querySelector("img.img-5-1");
+let im2 = document.querySelector("img.img-5-2");
+let im3 = document.querySelector("img.img-5-3");
+im1.addEventListener("click", up1);
+im2.addEventListener("click", up2);
+im3.addEventListener("click", up3);
 
-
-
-
-
-
+function up1() {
+    im1.style.width = "45%";
+    im1.style.filter = 'brightness(100%)';
+    im2.style.width = "27.5%";
+    im2.style.filter = 'brightness(50%)';
+    im3.style.width = "27.5%";
+    im3.style.filter = 'brightness(50%)';
+}
+function up2() {
+    im1.style.width = "27.5%";
+    im1.style.filter = 'brightness(50%)';
+    im2.style.width = "45%";
+    im2.style.filter = 'brightness(100%)';
+    im3.style.width = "27.5%";
+    im3.style.filter = 'brightness(50%)';
+}
+function up3() {
+    im1.style.width = "27.5%";
+    im1.style.filter = 'brightness(50%)';
+    im2.style.width = "27.5%";
+    im2.style.filter = 'brightness(50%)';
+    im3.style.width = "45%";
+    im3.style.filter = 'brightness(100%)';
+}
 
 
 

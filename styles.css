@@ -2,13 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
 
 
-
-
-
-
-
-
-
 /*------------------------------------ PRÉ DEFINIÇÕES ------------------------------------*/
 body {
     margin: 0;
@@ -53,29 +46,6 @@ body.no-scroll {
 
 
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -93,19 +63,22 @@ body.no-scroll {
     nav {
         width: 100%;
         display: flex;
-        justify-content: right;
+        justify-content: center;
         text-align: center;
         margin-top: 2%;
     }
     .menu-content {
         width: 50%;
         display: flex;
-        justify-content: space-around; 
+        justify-content: center; 
         height: 50px;
+        
     }
     li {
+        margin-left: 50px; 
+        margin-right: 50px; 
         list-style: none;
-        width: 100%;
+        width: 100px;
         line-height: 50px;
         color: var(--fonte-escura);
         font-size: 14pt;
@@ -142,8 +115,8 @@ body.no-scroll {
     }
     .ativa-contatos {
         position: fixed;
-        bottom: 50px;
-        right: 50px;
+        bottom: 20px;
+        right: 20px;
         width: 70px;
         background-color: transparent;
         border: none;
@@ -172,33 +145,7 @@ body.no-scroll {
     .right-area-home img {
         width: 30px;
     }
-
-
 /*------------------------------------ SCROLL 1 ------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -286,22 +233,7 @@ body.no-scroll {
         text-align: right;
         font-size: 12pt;
     }
-
 /*------------------------------------ SCROLL 2 ------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -368,87 +300,107 @@ body.no-scroll {
         object-fit: cover;
         margin-top: 5%;
     }
-
-
 /*------------------------------------ SCROLL 3 ------------------------------------*/
 
 
 
 
+
+
+/*------------------------------------ SCROLL 4 ------------------------------------*/
+
     #scrll4 {
         height: 100vh;
-        scroll-snap-align: start;
         overflow-y: scroll;
         margin-bottom: 50vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
     }
-    #scrll4 p {
-        background-color: #4e8ebf;
+    .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10vh;
+    }
+    .container img {
+        width: 700px;
+        height: auto;
+        transition: opacity 0.5s ease-in-out;
+        opacity: 1;
+        border-radius: 15px;
     }
 
+    .btnL {
+        background-color: rgba(75, 72, 72, 0.100);
+        height: 700px;
+        position: relative;
+        left: 68px;
+        padding: 22px;
+        border: none;
+        color: white;
+        transition: 300ms;
+        border-radius: 15px 0 0 15px;
+        font-size: 25px;
+    }
 
-
-
-
+    .btnR {
+        background-color: rgba(75, 72, 72, 0.100);
+        height: 700px;
+        position: relative;
+        right: 68px;
+        padding: 22px;
+        border: none;
+        color: white;
+        transition: 300ms;
+        border-radius:  0 15px 15px  0 ;
+        font-size: 25px;
+    }
+    .btnL:hover, .btnR:hover {
+        background-color: rgba(75, 72, 72, 0.150);
+        transition: 300ms;
+    }
 
 
 /*------------------------------------ SCROLL 4 ------------------------------------*/
 
 
-.container {
+
+
+
+
+#scrll5 {
+    height: 100vh;
+    overflow-y: scroll;
+    margin-bottom: 50vh;
+    overflow: hidden;
+    text-align: center;
+}
+.imagens-area5 {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin-top: 5%;
+    height: 100%;
 }
-.container img {
-    width: 700px;
-    height: auto;
-    transition: opacity 0.5s ease-in-out;
-    opacity: 1;
-    border-radius: 15px;
+.img-5-1 {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
 }
-
-.btnL {
-    background-color: rgba(75, 72, 72, 0.212);
-    height: 700px;
-    position: relative;
-    left: 68px;
-    padding: 22px;
-    border: none;
-    color: white;
-    transition: 300ms;
-    border-radius: 15px 0 0 15px;
-    font-size: 25px;
+.img-5-2 {
+    width: 27.5%;
+    filter: brightness(50%);
+    height: 100%;
+    object-fit: cover;
 }
 
-.btnR {
-    background-color: rgba(75, 72, 72, 0.212);
-    height: 700px;
-    position: relative;
-    right: 68px;
-    padding: 22px;
-    border: none;
-    color: white;
-    transition: 300ms;
-    border-radius:  0 15px 15px  0 ;
-    font-size: 25px;
+.img-5-3 {
+    width: 27.5%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%)
 }
-.btnL:hover, .btnR:hover {
-    background-color: rgba(75, 72, 72, 0.425);
-    transition: 300ms;
-}
-
-/*------------------------------------ SCROLL 4 ------------------------------------*/
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -485,10 +437,6 @@ body.no-scroll {
 
 
     @media screen and (max-width: 940px) {
-
-
-
-
         /*------------------------------------ SCROLL 1 ------------------------------------*/
         nav {
             width: 50%;
@@ -525,10 +473,13 @@ body.no-scroll {
         li {
             list-style: none;
             color: #ffffff;
+            width: 100%;
             font-size: 14pt;
             margin-top: 50px;
             transition: 300ms;  
             text-align: left;
+            margin-left: 0px; 
+            margin-right: 0px; 
         }
         li:hover{
             color: var(--hover-font);
@@ -597,7 +548,6 @@ body.no-scroll {
         .title-quality {
             margin-top: 20vh;
         }
-
         /*------------------------------------ SCROLL 3 ------------------------------------*/
 
 
@@ -609,7 +559,6 @@ body.no-scroll {
         .container img {
             width: 500px;
         }
-        
         .btnL {
             height: 500px;
             padding: 24px;
@@ -621,6 +570,7 @@ body.no-scroll {
             font-size: 20px;
         }
         /*------------------------------------ SCROLL 4 ------------------------------------*/
+
 
 
 
@@ -644,9 +594,6 @@ body.no-scroll {
         .center-home-logo{
             margin-top: 25vh;
         }
-        .text-here {
-            font-size: 10pt;
-        }
         /*------------------------------------ SCROLL 1 ------------------------------------*/
 
 
@@ -656,19 +603,25 @@ body.no-scroll {
         #scrll2{
             flex-direction: column;
         }
+
+
         .text-area-QS {
             display: flex;
+            position: relative;
             justify-content: center;
-            margin-right: 0;
+            margin-right: -5%;
+            right: 0;
+            z-index: -1;
+            max-height: 400px;
         }
         .text-here {
             font-size: 10pt;
-            width: 90%;
+            width: 95%;
             text-align: center;
             height: 100%;
-            padding: 10px;
-            background-color: #ffffff96;
-            border-radius: 10px;
+            padding: 15px;
+            background-color: #ffffff;
+
         }
 
         .buttons-QS  {
@@ -694,7 +647,6 @@ body.no-scroll {
         .left-area-quality {
             width: 100%;
         }
-    
         .text-U {
             font-size: 10pt;
         }
@@ -720,17 +672,16 @@ body.no-scroll {
             flex-wrap: wrap;
             width:70px;
         }
-       
-
         /*------------------------------------ SCROLL 3 ------------------------------------*/
 
 
         /*------------------------------------ SCROLL 4 ------------------------------------*/
         .container {
-            margin-top: 25%;
+            margin-top: 30%;
         }
         .container img {
             width: 400px;
+            z-index: -1;
         }
         
         .btnL {
@@ -738,6 +689,7 @@ body.no-scroll {
             padding: 14px;
             font-size: 20px;
             left: 50px;
+            z-index: 1;
         }
         .btnR {
             height: 400px;
@@ -761,12 +713,11 @@ body.no-scroll {
         }
         .area-menu-actived {
             width: 70%;   
-            height: 400px;
+            height: 500px;
         }
         .btn-act-active {
             right: 80%;
         }
-
         .text-area-QS {
             max-height: 300px;
             overflow-y: auto; 
@@ -776,10 +727,6 @@ body.no-scroll {
         .text-here {
             font-size: 8pt;
         }
-
-
-
-
         .text-U {
             width: 90%;
             font-size: 9pt;
@@ -795,27 +742,24 @@ body.no-scroll {
         .ico-Q {
             width:55px;
         }
-
         .foto-30019 {
             width: 50%;
             max-height: 60vh;
             margin-top:20px;
         }
-
         /*------------------------------------ SCROLL 4 ------------------------------------*/
         .container {
             
-            margin-top: 35%;
+            margin-top: 45%;
         }
         .container img {
-            width: 300px;
+            width: 320px;
         }
-        
         .btnL {
-            height: 300px;
+            height: 320px;
         }
         .btnR {
-            height: 300px;
+            height: 320px;
         }
         /*------------------------------------ SCROLL 4 ------------------------------------*/
 
@@ -879,13 +823,13 @@ body.no-scroll {
             height: 250px;
             padding: 10px;
             font-size: 20px;
-            left: 0;
+            left: 10px;
         }
         .btnR {
             height: 250px;
             padding: 10px;
             font-size: 20px;
-            right: 0;
+            right: 10px;
         }
         /*------------------------------------ SCROLL 4 ------------------------------------*/
 
@@ -902,7 +846,6 @@ body.no-scroll {
     padding: 0px;
     margin-top: 5%;
 }
-
 .buttons-QS {
     display: flex;
     justify-content: center;

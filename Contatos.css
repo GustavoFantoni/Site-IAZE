@@ -1,3 +1,21 @@
-body {
-    background-color: #ffffff00;
+.align {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+}
+.area-contatos-blocks {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.ctt{
+    text-align: center;
+    width: 48%;
+    margin: 1%;
+    background-color: #82c0df;
+    border-radius: 15px;
 }
