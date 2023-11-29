@@ -3,19 +3,12 @@
     display: flex;
     justify-content: center;
     height: 100%;
-
+    text-align: center;
 }
 .area-contatos-blocks {
     display: flex;
-    width: 30%;
+    width: 50%;
     justify-content: space-around;
     flex-wrap: wrap;
     
-}
-.ctt{
-    text-align: center;
-    width: 48%;
-    margin: 1%;
-    background-color: #82c0df;
-    border-radius: 15px;
 }

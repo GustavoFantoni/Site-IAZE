@@ -120,7 +120,7 @@ let btnL = document.querySelector('button.btnL');
 btnR.addEventListener('click', right);
 btnL.addEventListener('click', left);
 let areaImagens = document.querySelector('div.carrossel');
-let imagens = ['Images/28.png', 'Images/30134.png', 'Images/30136.png', 'Images/29017.png'];
+let imagens = ['Images/30134.png', 'Images/28.png',  'Images/30136.png', 'Images/29017.png'];
 let itensArray = 0;
 
 // Pré-carrega as imagens
@@ -202,40 +202,30 @@ function up3() {
 
 
 
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.section');
+    const topoButton = document.querySelector('.topo');
 
     window.addEventListener('wheel', handleWheel);
     window.addEventListener('touchstart', handleTouchStart);
     window.addEventListener('touchmove', handleTouchMove);
     window.addEventListener('touchend', handleTouchEnd);
+    window.addEventListener('scroll', handleScroll);
 
     function handleWheel(event) {
         const screenSize = window.innerWidth;
         const deltaY = event.deltaY;
 
         if (screenSize <= 600) {
-            // Em telas pequenas, inverte o comportamento
             if (deltaY > 0) {
-                // Scroll para baixo
                 scrollToSection('next');
             } else {
-                // Scroll para cima
                 scrollToSection('prev');
             }
         } else {
-            // Em telas maiores, mantém o comportamento padrão
             if (deltaY > 0) {
-                // Scroll para baixo
                 scrollToSection('next');
             } else {
-                // Scroll para cima
                 scrollToSection('prev');
             }
         }
@@ -248,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function handleTouchMove(event) {
-        event.preventDefault(); // Evita o comportamento padrão de rolagem em dispositivos móveis
+        event.preventDefault();
     }
 
     function handleTouchEnd(event) {
@@ -258,25 +248,33 @@ document.addEventListener('DOMContentLoaded', function () {
         const screenSize = window.innerWidth;
 
         if (screenSize <= 600) {
-            // Em telas pequenas, inverte o comportamento
             if (deltaY > 50) {
-                // Scroll para cima
                 scrollToSection('prev');
             } else if (deltaY < -50) {
-                // Scroll para baixo
                 scrollToSection('next');
             }
         } else {
-            // Em telas maiores, mantém o comportamento padrão
             if (deltaY > 50) {
-                // Scroll para baixo
                 scrollToSection('next');
             } else if (deltaY < -50) {
-                // Scroll para cima
                 scrollToSection('prev');
             }
         }
     }
+
+    function handleScroll() {
+        const currentSection = getCurrentSection();
+
+        if (currentSection !== 0) {
+            topoButton.style.display = 'block';
+        } else {
+            topoButton.style.display = 'none';
+        }
+    }
+
+    topoButton.addEventListener('click', function () {
+        sections[0].scrollIntoView({ behavior: 'smooth' });
+    });
 
     function scrollToSection(direction) {
         let currentSection = getCurrentSection();
@@ -295,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const scrollPosition = window.scrollY || window.pageYOffset;
 
         for (let i = 0; i < sections.length; i++) {
-            const sectionTop = sections[i].offsetTop - (sections[i].offsetHeight / 2); // Ajuste para o centro da seção
+            const sectionTop = sections[i].offsetTop - (sections[i].offsetHeight / 2);
             if (scrollPosition >= sectionTop) {
                 currentSection = i;
             }
