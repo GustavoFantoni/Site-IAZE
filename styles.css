@@ -151,7 +151,7 @@ body.no-scroll {
     }
     .topo {
         position: fixed;
-        bottom: 30px;
+        bottom: 5px;
         left: 20px;
         background-color: rgba(160, 205, 236, 0.295);
         padding: 10px;
@@ -442,6 +442,58 @@ body.no-scroll {
     overflow: hidden;
     text-align: center;
 }
+footer {
+    height: 50%;
+    background-color: #82c0df;
+    width: 100%;
+    position:relative;
+    top: 50%;
+}
+.area-blocks-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-footer {
+    width: 100px;
+    margin-bottom: 5%;
+}
+.block-1, .block-2, .block-3, .block-4 {
+    color: #ffffff;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    padding-left: 10%;
+}
+.block-1 {
+    border-right: 1px solid #ffffff;
+}
+.block-2 {
+    padding-left: 2%;
+}
+.block-2 a {
+    width: 80%;
+    color: #ffffff;
+}
+.block-1 a, .block-3 a {
+    color: #ffffff;
+}
+.block-3 {
+    border-left: 1px solid #ffffff    ;
+}
+.icon-footer img {
+    width: 30px;
+    position: relative;
+    right: 10px;
+    top: 9px;
+    padding: 1px;
+}
+.horario {
+    width: 80%;
+    
+}
 /*------------------------------------ SCROLL 7 ------------------------------------*/
 
 
@@ -724,6 +776,53 @@ body.no-scroll {
             right: 50px;
         }
         /*------------------------------------ SCROLL 4 ------------------------------------*/
+        footer {
+            height: 80%;
+            position:relative;
+            top: 20%;
+        }
+        .area-blocks-footer {
+            display: block;
+        }
+        .block-1, .block-2, .block-3, .block-4 {
+            color: #ffffff;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            text-align: left;
+            padding-left: 10%;
+            margin-top: 15%;
+        }
+        .block-1 {
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+            padding-top: 5%;
+        }
+        .block-2 {
+            padding-left: 10%;
+            padding-bottom: 5%;
+            border-bottom: 1px solid #ffffff;
+        }
+        .block-2 a {
+            width: 80%;
+            color: #ffffff;
+        }
+        .block-3 {
+            border: none;
+            padding-bottom: 5%;
+        }
+        .icon-footer img {
+            width: 20px;
+            position: relative;
+            right: 10px;
+            top: 3px;
+            padding: 1px;
+        }
+        .horario {
+            width: 90%;
+            
+        }
     }
 
     @media screen and (max-width: 450px) {
@@ -826,6 +925,12 @@ body.no-scroll {
         .bebe {
             color: var(--botoes);
         }
+        .ativa-contatos {
+            position: fixed;
+            bottom: 1px;
+            right: 10px;
+            width: 60px;
+        }
         .buttons-QS button {
             font-size: 8pt;
         }
@@ -898,6 +1003,26 @@ body.no-scroll {
             background-color:rgba(75, 72, 72, 0.150);
         }
         /*------------------------------------ SCROLL 4 ------------------------------------*/
+
+        footer {
+            height: 100%;
+            position:relative;
+            top: 0;
+        }
+        .logo-footer {
+            margin-bottom: 0;
+        }
+        .block-1, .block-2, .block-3, .block-4 {
+            font-size: 9pt;
+        }
+        .block-1 {
+
+            padding-top: 1%;
+        }
+        .block-2 {
+            padding-bottom: 1%;
+        }
+
 
     }
 
