@@ -422,7 +422,27 @@ body.no-scroll {
 
 
 
+/*------------------------------------ SCROLL 6 ------------------------------------*/
+    #scrll6 {
+        height: 100vh;
+        overflow-y: scroll;
+        margin-bottom: 50vh;
+        overflow: hidden;
+        text-align: center;
+    }
+/*------------------------------------ SCROLL 6 ------------------------------------*/
 
+
+
+/*------------------------------------ SCROLL 7 ------------------------------------*/
+#scrll7 {
+    height: 100vh;
+    overflow-y: scroll;
+    margin-bottom: 50vh;
+    overflow: hidden;
+    text-align: center;
+}
+/*------------------------------------ SCROLL 7 ------------------------------------*/
 
 
 
