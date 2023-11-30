@@ -1,10 +1,8 @@
 .return {
     position: fixed;
-    top: 50px;
-    left: 50px;
-}
-.return img {
-    width: 70px;
+    width: 30px;
+    top: 15px;
+    left: 15px;
 }
 .link-logistas {
     width: 100%;

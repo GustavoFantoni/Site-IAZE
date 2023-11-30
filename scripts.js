@@ -201,7 +201,6 @@ function up3() {
 
 
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.section');
     const topoButton = document.querySelector('.topo');
@@ -211,6 +210,9 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('touchmove', handleTouchMove);
     window.addEventListener('touchend', handleTouchEnd);
     window.addEventListener('scroll', handleScroll);
+
+    // Adiciona chamada para handleScroll ao carregar a página
+    handleScroll();
 
     function handleWheel(event) {
         const screenSize = window.innerWidth;
