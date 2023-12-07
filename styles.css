@@ -659,9 +659,16 @@ footer {
 
 
         /*------------------------------------ SCROLL 2 ------------------------------------*/
+
         .left-section-QS {
             width: 30%;
             margin-left: 0;
+            height: 100%;
+            margin-top: 0;
+        }
+        .left-section-QS img{
+            border-radius: 0 0 0 0;
+            box-shadow: 10px 10px 10px #0000001a;
         }
         .right-section-QS {
             width: 70%;
@@ -826,12 +833,6 @@ footer {
 
 
 
-        .left-section-QS img {
-            width: 30%;
-            position: absolute;
-            z-index: 0;
-            border-radius: 0 50px 50px 0;
-        }
        
           
         .buttons-QS a {
