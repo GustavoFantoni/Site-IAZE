@@ -671,7 +671,9 @@ footer {
             width: 100px;
             font-size: 13pt;
             padding: 0;
+            transition: background-size 100ms;
           }
+          
 
         .text-here {
             font-size: 12pt;
