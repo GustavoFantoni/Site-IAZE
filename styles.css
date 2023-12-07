@@ -25,7 +25,7 @@ ul {
     --hover-font: #add3e6;
     --back-button: #82c0df;
   }
-  #overlay {
+#overlay {
     display: none;
     position: fixed;
     top: 0;
@@ -153,12 +153,12 @@ body.no-scroll {
         position: fixed;
         bottom: 5px;
         left: 20px;
-        background-color: rgba(160, 205, 236, 0.295);
+        background-color: var(--fonte-escura);
         padding: 10px;
         font-size: 10pt;
         border-radius: 30px;
         border: none;
-        color: #82c0df;
+        color: #ffffff;
         z-index: 100;
     }
 /*------------------------------------ SCROLL 1 ------------------------------------*/
@@ -172,81 +172,74 @@ body.no-scroll {
     #scrll2{
         margin-top: 200%;
         height: 100vh;
-        padding: 20px;
-        display: flex;
         scroll-snap-align: start;
         overflow-y: scroll;
         margin-bottom: 50vh;
         overflow: hidden;
+        display: flex;
+        justify-content: space-between;
     }
     .left-section-QS {
-        width: 52%;
-        display: flex;
-        justify-content: right;
+        width: 30%;
+        height: 90vh;
+        margin-top: 5vh;
+        margin-left: 5vh;
     }
-
-    .imagem-QM {
-        width: 80%;
-        border-radius: 50px 0 0 50px;   
+    .left-section-QS img {
+        width: 100%;
         object-fit: cover;
-        margin-top: 10%;
-        margin-bottom: 10%;
+        border-radius: 50px 0 0 50px;
+        height: 100%;
     }
     .right-section-QS {
-        width: 48%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px;
+        width: 50%;
+        height: 90vh;
+        margin-top: 20vh;
     }
     .buttons-QS {
-        width: 70%;
-        margin-left: 15%;
+        width: 100%;
         display: flex;
         justify-content: center;
-    }
-    .buttons-QS button {
-        font-size: 14pt;
-        padding: 10px;
-        color: #4e8ebf;
-        margin: -2px;
-        margin-bottom: 5%;
-    }
-    .text-1 {
-        border-radius: 15px 0 0 15px;
-        border-right: none;
-        border-top: 1px solid  var(--back-button);
-        border-left: 1px solid var(--back-button);
-        border-bottom: 1px solid var(--back-button);
-        background-color: #ffffff;
-    }
-    .text-2 {
-        border-left: none;
-        border-right: none;
-        border-top: 1px solid var(--back-button);
-        border-bottom: 1px solid var(--back-button);
-        background-color:  var(--back-button);
-    }
-    .text-3 {
-        border-radius: 0 15px 15px 0;
-        border-left: none;
-        border-top: 1px solid var(--back-button);
-        border-bottom: 1px solid var(--back-button);
-        border-right: 1px solid var(--back-button);
-        background-color:  var(--back-button);
+      }
+      
+    .buttons-QS a {
+        width: 150px;
+        text-align: center;
+        color: var(--fonte-escura);
+        margin: 2%;
+        padding: 15px;
+        border: none;
+        font-size: 16pt;
+
+
+        background-image: 
+        linear-gradient(
+            to bottom, transparent 0%, transparent 90%, var(--fonte-escura) 90%, var(--fonte-escura) 100%);
+        background-repeat: no-repeat;
+        background-size: 0% 100%;
+        background-position-x: right;
+        transition: background-size 300ms;
+      }
+      .buttons-QS a:hover {
+        background-size: 100% 100%;
+        background-position-x: left;
+      }
+      .buttons-QS .text-1 {
+        border-bottom: 3px solid var(--fonte-escura);
     }
     .text-area-QS {
-        display: flex;
-        justify-content: right;
-        margin-right: 15%;
-        margin-bottom: 20px;
+        width: 90%;
+        margin-left: 5%;
+        text-align: right;
     }
     .text-here {
-        width: 60%;
-        overflow-y: auto;
-        text-align: right;
-        font-size: 12pt;
+        font-size: 13pt;
     }
+
+      
+
+    
+    
 /*------------------------------------ SCROLL 2 ------------------------------------*/
 
 
@@ -582,31 +575,27 @@ footer {
         /*------------------------------------ SCROLL 2 ------------------------------------*/
 
         .left-section-QS {
-            width: 50%;
-            display: flex;
-            justify-content: left;
-            margin-left: 1%;
-        }
-        .imagem-QM {
-            width: 100%;
-            border-radius: 50px 0 0 50px;   
-  
+            width: 40%;
         }
         .right-section-QS {
-            width: 45%;
+            width: 60%;
+            margin-top: 20vh;
         }
-        .buttons-QS {
-            width: 70%;
+        .buttons-QS a {
+            margin-top: 5vh;
+            width: 130px;
+            font-size: 14pt;
+          }
+        .text-area-QS {
+            width: 80%;
             margin-left: 15%;
-            display: flex;
-            justify-content: center;
-        }
-        .buttons-QS button {
-            font-size: 10pt;
+            text-align: right;
         }
         .text-here {
-            font-size: 10pt;
+            font-size: 13pt;
         }
+    
+        
         /*------------------------------------ SCROLL 2 ------------------------------------*/
 
 
@@ -669,49 +658,25 @@ footer {
 
 
         /*------------------------------------ SCROLL 2 ------------------------------------*/
-        #scrll2{
-            flex-direction: column;
-        }
         .left-section-QS {
-            width: 100%;
-            height: 50vh;
-            justify-content: center;
-        }
-        .imagem-QM {
-            width: 60%;
-            height: 40vh;
-            margin-top: 5%;
-            margin-bottom: 0;
+            width: 30%;
+            margin-left: 0;
         }
         .right-section-QS {
-            height: 50vh;
+            width: 70%;
+            margin-top: 10vh;
         }
-        .text-area-QS {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            z-index: -1;
-        }
-        .text-here {
-            font-size: 10pt;
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-            background-color: #ffffff;
-            max-height: 300px;
-            overflow-y: auto; 
-            border-radius: 30px;
-        }
-        .buttons-QS  {
-            width: 80%;
-            margin-left: 10%;
-            font-size: 10pt;
-        }
-        .buttons-QS button {
-            font-size: 8pt;
-            padding: 5px;
+        .buttons-QS a {
+            margin-top: 10vh;
+            width: 100px;
+            font-size: 13pt;
+            padding: 0;
+          }
 
+        .text-here {
+            font-size: 12pt;
         }
+    
         /*------------------------------------ SCROLL 2 ------------------------------------*/
 
         /*------------------------------------ SCROLL 3 ------------------------------------*/
@@ -826,48 +791,13 @@ footer {
     }
 
     @media screen and (max-width: 450px) {
-        .left-section-QS {
-            width: 100%;
-            justify-content: center;
-            margin: 0;
-        }
-        .imagem-QM {
-            width: 81%;
-            border-radius: 50px 0 0 0px;   
-            object-fit: cover;
-            margin: 0;
-        }
+ 
         .area-menu-actived {
             width: 70%;   
             height: 500px;
         }
         .btn-act-active {
             right: 80%;
-        }
-        .text-1 {
-            border-radius: 0 0 0 15px;
-        }
-        .text-3 {
-            border-radius: 0 0 15px 0;
-        }
-        .left-section-QS {
-            height: 35vh;
-            margin: 0;
-        }
-        .right-section-QS {
-            height: 70vh;
-        }
-        .text-area-QS {
-            width: 100%;
-            height: 100%;
-            overflow-y: hidden; 
-            padding: 10px;
-        }
-        .text-here {
-            max-height: 100%;
-            height: 100%;
-            width: 100%;
-            padding: 10px;
         }
         .text-U {
             width: 90%;
@@ -886,6 +816,64 @@ footer {
             max-height: 60vh;
             margin-top:20px;
         }
+
+
+
+
+
+
+
+        .left-section-QS img {
+            width: 30%;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.3;
+            border-radius: 0 50px 50px 0;
+        }
+       
+          
+        .buttons-QS a {
+            width: 100px;
+            text-align: center;
+            color: var(--fonte-escura);
+            margin-left: 0%;
+            padding: 0px;
+            border: none;
+            font-size: 10pt;
+          }
+
+        .text-area-QS {
+            width: 80%;
+            margin-top: 5%;
+            margin-left: 10%;
+            text-align: right;
+            max-height: 50vh;
+            overflow-y: auto;
+            padding: 5px;
+        }
+        .text-here {
+            font-size: 11pt;
+        }
+        .text-area-QS::-webkit-scrollbar {
+            width: 3px; 
+          }
+          
+          .text-area-QS::-webkit-scrollbar-thumb {
+            background-color: var(--hover-font); 
+          }
+          
+          .text-area-QS::-webkit-scrollbar-track {
+            background-color: transparent; 
+          }
+          
+          .text-area-QS::-ms-scrollbar {
+            width: 12px; 
+          }
+          
+         
+          
+     
+
         /*------------------------------------ SCROLL 4 ------------------------------------*/
         .container {
             
@@ -931,34 +919,34 @@ footer {
             right: 10px;
             width: 60px;
         }
-        .buttons-QS button {
-            font-size: 8pt;
-        }
-        .imagem-QM, .left-section-QS {
+       
+        
+        
+        .left-section-QS img {
             display: none;
         }
-        .text-1 {
-            border-radius: 15px 0 0 15px;
-        }
-        .text-3 {
-            border-radius: 0 15px 15px 0;
-        }
-        .right-section-QS {
-            height: 90vh;
-        }
-        .text-area-QS  {
-            height: 60vh;
+        .right-section-QS{
             width: 100%;
-            padding: 0;
-            overflow: hidden;
+        }
+          
+        .buttons-QS a {
+
+            margin: 12vh 0 0 0;
+          }
+
+        .text-area-QS {
+            width: 85%;
+            margin: 5%;
+            text-align: right;
+            max-height: 50vh;
+            overflow-y: auto;
         }
         .text-here {
-            font-size: 8pt;
-            max-height: 100%;
-             height: 100%;
-             width: 100%;
-             padding: 10px;
+            font-size: 11pt;
         }
+    
+        
+      
         .text-U {
             overflow-y: auto;
             font-size: 10pt;
@@ -1027,23 +1015,3 @@ footer {
     }
 
 /*------------------------------------ RESPONSIVIDADE ------------------------------------*/
-.right-section-QS {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px;
-    margin-top: 5%;
-}
-.buttons-QS {
-    display: flex;
-    justify-content: center;
-}
-.buttons-QS button {
-    width: 100%;
-    font-size: 9pt;
-    padding: 15px;
-    margin: -2px;
-    margin-bottom: 0;
-
-}
