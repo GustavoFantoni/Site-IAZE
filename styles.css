@@ -212,12 +212,46 @@ body.no-scroll {
     }
 /*------------------------------------ SCROLL 2 ------------------------------------*/
 
-
+/*------------------------------------ SCROLL 7 ------------------------------------*/
+#scrll3 {
+    height: 100vh;
+    overflow-y: scroll;
+    margin-bottom: 50vh;
+    overflow: hidden;
+    text-align: center;
+}
+.imagens-area5 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+.img-5-1 {
+    width: 45%;
+    height: 100%;
+    object-fit: cover;
+    transition: 300ms;
+}
+.img-5-2 {
+    width: 27.5%;
+    filter: brightness(50%);
+    height: 100%;
+    object-fit: cover;
+    transition: 300ms;
+}
+.img-5-3 {
+    width: 27.5%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: 300ms;
+}
+/*------------------------------------ SCROLL 7 ------------------------------------*/
 
 
 
 /*------------------------------------ SCROLL 3 ------------------------------------*/
-    #scrll3 {
+    #scrll4 {
         height: 100vh;
         scroll-snap-align: start;
         overflow-y: scroll;
@@ -262,20 +296,20 @@ body.no-scroll {
 /*------------------------------------ SCROLL 3 ------------------------------------*/
 
 /*------------------------------------ SCROLL 4 ------------------------------------*/
-#scrll4{
-    height: 100vh;
-    scroll-snap-align: start;
-    overflow-y: scroll;
-    margin-bottom: 50vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-}
+    #scrll5{
+        height: 100vh;
+        scroll-snap-align: start;
+        overflow-y: scroll;
+        margin-bottom: 50vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+    }
 /*------------------------------------ SCROLL 4 ------------------------------------*/
 
 
 /*------------------------------------ SCROLL 5 ------------------------------------*/
-    #scrll5 {
+    #scrll6 {
         height: 100vh;
         scroll-snap-align: start;
         overflow-y: scroll;
@@ -305,7 +339,7 @@ body.no-scroll {
 
 /*------------------------------------ SCROLL 6 ------------------------------------*/
 
-    #scrll6 {
+    #scrll7 {
         height: 100vh;
         overflow-y: scroll;
         margin-bottom: 50vh;
@@ -365,41 +399,7 @@ body.no-scroll {
 
 
 
-/*------------------------------------ SCROLL 7 ------------------------------------*/
-    #scrll7 {
-        height: 100vh;
-        overflow-y: scroll;
-        margin-bottom: 50vh;
-        overflow: hidden;
-        text-align: center;
-    }
-    .imagens-area5 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        height: 100%;
-    }
-    .img-5-1 {
-        width: 45%;
-        height: 100%;
-        object-fit: cover;
-        transition: 300ms;
-    }
-    .img-5-2 {
-        width: 27.5%;
-        filter: brightness(50%);
-        height: 100%;
-        object-fit: cover;
-        transition: 300ms;
-    }
-    .img-5-3 {
-        width: 27.5%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(50%);
-        transition: 300ms;
-    }
-/*------------------------------------ SCROLL 7 ------------------------------------*/
+
 
 
 
@@ -644,7 +644,7 @@ body.no-scroll {
             .text-here {
                 font-size: 12pt;
             }
-            #scrll2, #scrll3, #scrll4 {
+            #scrll2, #scrll4, #scrll5 {
                 background-color: #ffffff;
             }
             /*------------------------------------ SCROLL 2 ------------------------------------*/
@@ -670,7 +670,7 @@ body.no-scroll {
 
             /*------------------------------------ SCROLL 5 ------------------------------------*/
 
-            #scrll5 {
+            #scrll6 {
                 background-color: #ffffff;
             }
  
