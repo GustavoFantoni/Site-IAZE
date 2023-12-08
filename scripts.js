@@ -43,42 +43,6 @@ function mostrarRedes() {
 
 
 
-let btnText1 = document.querySelector("a.text-1");
-let btnText2 = document.querySelector("a.text-2");
-let btnText3 = document.querySelector("a.text-3");
-let textQS = document.querySelector("p.text-here");
-btnText1.addEventListener("click", btn1);
-btnText2.addEventListener("click", btn2);
-btnText3.addEventListener("click", btn3);
-text1 = "A Iaze Bebê, ponto de referência em todo o país, é uma marca renomada especializada em oferecer excepcionais conjuntos para bebês. Desde o início, nossa dedicação à qualidade e conforto se destacou, tornando-nos líderes no mercado. Operando uma loja online desde 2019, buscamos preencher uma lacuna para aqueles que desejam adquirir nossos renomados conjuntos. Nosso compromisso é criar peças únicas, fruto de um processo de produção complexo e rigoroso, refletindo beleza e bem-estar. A Iaze Bebê foi fundada com a missão de oferecer produtos de alta qualidade e segurança, focando no desenvolvimento e bem-estar dos pequenos. Estamos comprometidos em atender às necessidades de nosso público, oferecendo diversas opções de pagamento, métodos de entrega e canais de atendimento para esclarecer dúvidas, sugestões ou reclamações. Seja parte da nossa história, onde a excelência em produtos para bebês encontra-se com o compromisso inabalável com nossos clientes.";
-text2 = "Missão: A missão da Iaze Bebê é proporcionar produtos de alta qualidade e segurança para bebês, investindo em pesquisa de tendências globais e utilizando os melhores materiais. Buscamos constantemente inovação para garantir o bem-estar dos pequenos, priorizando a satisfação de nossos clientes. <br> Visão: Nossa visão é ser reconhecida como a marca referência em produtos para bebês, destacando-nos pela excelência em qualidade, confiabilidade e beleza. Almejamos fortalecer nossa presença global, construindo relacionamentos sólidos pautados no respeito, carinho e confiança com nossos clientes.";
-text3 = "A Iaze Bebê tem a honra de ser amplamente reconhecida como ponto de referência nacional em produtos para bebês. Nossa excepcional linha de conjuntos para bebês conquistou destaque pela qualidade e conforto proporcionados. Desde o início de nossas operações online, recebemos reconhecimento por preencher uma lacuna muitas vezes não suprida por outras lojas. Nossa dedicação ao desenvolvimento, pesquisa de tendências globais e atendimento excepcional resultou em prêmios e elogios da comunidade de pais e cuidadores. Estamos gratos pela confiança de nossos valiosos clientes, e continuamos comprometidos em oferecer produtos que atendam às expectativas mais elevadas.";
-
-
-function btn1() {
-    btnText1.style.borderBottom = "3px solid #4e8ebf";
-    btnText2.style.border = "none";
-    btnText3.style.border = "none";
-    textQS.style.transition = "500ms";
-    textQS.innerHTML = text1;
-}
-function btn2() {
-    btnText1.style.border = "none";
-    btnText2.style.borderBottom = "3px solid #4e8ebf";
-    btnText3.style.border = "none";
-    textQS.style.transition = "500ms";
-    textQS.innerHTML = text2;
-}
-function btn3() {
-    btnText1.style.border = "none";
-    btnText2.style.border = "none";
-    btnText3.style.borderBottom = "3px solid #4e8ebf";
-    textQS.style.transition = "500ms";
-    textQS.innerHTML = text3;
-}
-
-
-
 
 
 

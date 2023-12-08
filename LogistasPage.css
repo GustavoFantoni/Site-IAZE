@@ -22,9 +22,11 @@
     bottom: 0;
     display: flex;
     justify-content: center;
-    background-color: #add3e6;
-    color: #4e8ebf;
+    background-color: #82c0df;
+    color: #ffffff;
     text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1100px) {
@@ -48,5 +50,8 @@
 @media screen and (max-width: 400px) {
     .link-logistas img {
         width: 120px;
+    }
+    .info{
+        font-size: 14pt;
     }
 }
