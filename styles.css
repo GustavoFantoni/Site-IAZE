@@ -226,20 +226,20 @@ body.no-scroll {
     justify-content: center;
     height: 100%;
 }
-.img-5-1 {
+#img-5-1 {
     width: 45%;
     height: 100%;
     object-fit: cover;
     transition: 300ms;
 }
-.img-5-2 {
+#img-5-2 {
     width: 27.5%;
     filter: brightness(50%);
     height: 100%;
     object-fit: cover;
     transition: 300ms;
 }
-.img-5-3 {
+#img-5-3 {
     width: 27.5%;
     height: 100%;
     object-fit: cover;

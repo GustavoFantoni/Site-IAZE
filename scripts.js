@@ -1,3 +1,35 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var lazyloadImages = document.querySelectorAll("[data-lazy]");
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var img = entry.target;
+          img.setAttribute("src", img.getAttribute("data-lazy"));
+          observer.unobserve(img);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(img) {
+      observer.observe(img);
+    });
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let menu = document.querySelector('ul.menu-content');
 let btn = document.querySelector('button.btn-act');
 let overlay = document.getElementById('overlay'); // Adicionado para referenciar o overlay
@@ -106,9 +138,9 @@ function left() {
 
 
 
-let im1 = document.querySelector("img.img-5-1");
-let im2 = document.querySelector("img.img-5-2");
-let im3 = document.querySelector("img.img-5-3");
+let im1 = document.querySelector("img#img-5-1");
+let im2 = document.querySelector("img#img-5-2");
+let im3 = document.querySelector("img#img-5-3");
 im1.addEventListener("click", up1);
 im2.addEventListener("click", up2);
 im3.addEventListener("click", up3);
