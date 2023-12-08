@@ -68,7 +68,7 @@ let btnL = document.querySelector('button.btnL');
 btnR.addEventListener('click', right);
 btnL.addEventListener('click', left);
 let areaImagens = document.querySelector('div.carrossel');
-let imagens = ['Images/30134.png', 'Images/28.png',  'Images/30136.png', 'Images/29017.png'];
+let imagens = ['Images/30134.webp',  'Images/30026.webp', 'Images/30111.webp', "Images/30015.webp"];
 let itensArray = 0;
 
 // Pré-carrega as imagens
