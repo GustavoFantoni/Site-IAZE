@@ -174,7 +174,6 @@ body.no-scroll {
         height: 100vh;
         scroll-snap-align: start;
         overflow-y: scroll;
-        margin-bottom: 50vh;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -255,7 +254,6 @@ body.no-scroll {
         height: 100vh;
         scroll-snap-align: start;
         overflow-y: scroll;
-        margin-bottom: 50vh;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -300,7 +298,6 @@ body.no-scroll {
         height: 100vh;
         scroll-snap-align: start;
         overflow-y: scroll;
-        margin-bottom: 50vh;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -313,7 +310,6 @@ body.no-scroll {
         height: 100vh;
         scroll-snap-align: start;
         overflow-y: scroll;
-        margin-bottom: 50vh;
         overflow: hidden;
         display: flex;
         justify-content: space-between;
@@ -342,7 +338,6 @@ body.no-scroll {
     #scrll7 {
         height: 100vh;
         overflow-y: scroll;
-        margin-bottom: 50vh;
         overflow: hidden;
         display: flex;
         justify-content: center;
@@ -413,7 +408,6 @@ body.no-scroll {
     #scrll8 {
         height: 100vh;
         overflow-y: scroll;
-        margin-bottom: 50vh;
         overflow: hidden;
         text-align: center;
     }
