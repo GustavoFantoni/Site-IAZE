@@ -172,22 +172,15 @@ function up3() {
 
 
 
-
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.section');
     const topoButton = document.querySelector('.topo');
+    let screenSize = window.innerWidth;
+    let touchStartY;
 
     window.addEventListener('wheel', handleWheel);
-    window.addEventListener('touchstart', handleTouchStart);
-    window.addEventListener('touchmove', handleTouchMove);
+    window.addEventListener('touchstart', handleTouchStart, { passive: false });
+    window.addEventListener('touchmove', handleTouchMove, { passive: false });
     window.addEventListener('touchend', handleTouchEnd);
     window.addEventListener('scroll', handleScroll);
 
@@ -195,79 +188,63 @@ document.addEventListener('DOMContentLoaded', function () {
     handleScroll();
 
     function handleWheel(event) {
-        const screenSize = window.innerWidth;
         const deltaY = event.deltaY;
-
-        if (screenSize <= 600) {
-            if (deltaY > 0) {
-                scrollToSection('next');
-            } else {
-                scrollToSection('prev');
-            }
-        } else {
-            if (deltaY > 0) {
-                scrollToSection('next');
-            } else {
-                scrollToSection('prev');
-            }
-        }
+        handleScrollDirection(deltaY);
     }
-
-    let touchStartY;
 
     function handleTouchStart(event) {
         touchStartY = event.touches[0].clientY;
+        // Tornar o evento ativo para permitir preventDefault()
+        event.preventDefault();
     }
 
     function handleTouchMove(event) {
-        event.preventDefault();
+        // Evitar a execução de event.preventDefault() se não houver deslocamento vertical
+        if (Math.abs(event.touches[0].clientY - touchStartY) > 10) {
+            event.preventDefault();
+        }
     }
 
     function handleTouchEnd(event) {
         const touchEndY = event.changedTouches[0].clientY;
         const deltaY = touchEndY - touchStartY;
-
-        const screenSize = window.innerWidth;
-
-        if (screenSize <= 600) {
-            if (deltaY > 50) {
-                scrollToSection('prev');
-            } else if (deltaY < -50) {
-                scrollToSection('next');
-            }
-        } else {
-            if (deltaY > 50) {
-                scrollToSection('next');
-            } else if (deltaY < -50) {
-                scrollToSection('prev');
-            }
-        }
+        handleScrollDirection(deltaY);
     }
 
     function handleScroll() {
         const currentSection = getCurrentSection();
 
-        if (currentSection !== 0) {
-            topoButton.style.display = 'block';
-        } else {
-            topoButton.style.display = 'none';
-        }
+        topoButton.style.display = currentSection !== 0 ? 'block' : 'none';
     }
 
     topoButton.addEventListener('click', function () {
         sections[0].scrollIntoView({ behavior: 'smooth' });
     });
 
+    function handleScrollDirection(deltaY) {
+        if (screenSize <= 600) {
+            if (deltaY > 50) {
+                scrollToSection('prev');
+            } else if (deltaY < -50) {
+                scrollToSection('next');
+            }
+        } else {
+            if (deltaY > 50) {
+                scrollToSection('next');
+            } else if (deltaY < -50) {
+                scrollToSection('prev');
+            }
+        }
+    }
+
     function scrollToSection(direction) {
         let currentSection = getCurrentSection();
 
-        if (direction === 'next' && currentSection < sections.length - 1) {
-            currentSection++;
-        } else if (direction === 'prev' && currentSection > 0) {
-            currentSection--;
+        if ((direction === 'next' && currentSection < sections.length - 1) ||
+            (direction === 'prev' && currentSection > 0)) {
+            currentSection += (direction === 'next') ? 1 : -1;
+            sections[currentSection].scrollIntoView({ behavior: 'smooth' });
         }
-
-        sections[currentSection].scrollIntoView({ behavior: 'smooth' });
     }
 
     function getCurrentSection() {
@@ -283,4 +260,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         return currentSection;
     }
+
+    window.addEventListener('resize', function () {
+        screenSize = window.innerWidth;
+    });
 });
