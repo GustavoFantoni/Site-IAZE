@@ -74,27 +74,6 @@ function mostrarRedes() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let btnR = document.querySelector('button.btnR');
 let btnL = document.querySelector('button.btnL');
 btnR.addEventListener('click', right);
