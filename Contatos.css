@@ -1,3 +1,8 @@
+.return {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+}
 .formulary {
     height: 100vh;
     width: 100%;
@@ -12,17 +17,28 @@
     border-radius: 0 50px 50px 0;
 }
 .right-form {
-    width: 50%;
+    width: 50%; 
+}
+.border {
+    border: 1px solid black; 
+    padding: 5% 1%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
 }
 input {
-    border: 2px solid black;
+    border: none;
+    border-bottom: 1px solid black;
     background-color: transparent;
-    margin: 4px 2px;
+    margin: 0px 2px;
     height: 50px;
 }
 ::placeholder {
-    color: rgba(0, 0, 0, 0.548);
+    color: rgba(0, 0, 0, 0.301);
+    margin: 0px 2px;
+
 }
+
 #name {
     width: 40%;
 }
@@ -30,9 +46,8 @@ input {
     width: 40%;
 }
 #email {
-    width: 81.5%;
+    width: 40%;
 }
 #message {
-    width: 81.5%;
-    height: 200px;
+    width: 40%;
 }
