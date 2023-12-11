@@ -1,32 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var lazyloadImages = document.querySelectorAll("[data-lazy]");
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          var img = entry.target;
-          img.setAttribute("src", img.getAttribute("data-lazy"));
-          observer.unobserve(img);
-        }
-      });
-    });
-
-    lazyloadImages.forEach(function(img) {
-      observer.observe(img);
-    });
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -47,9 +18,6 @@ function active() {
 }
 
 
-
-
-
 let atvButton = document.querySelector("button.ativa-contatos");
 atvButton.addEventListener("click", mostrarRedes);
 
@@ -62,16 +30,6 @@ function mostrarRedes() {
     btnF.classList.toggle('btnF-Actived');
     btnI.classList.toggle('btnI-Actived');
 }
-
-
-
-
-
-
-
-
-
-
 
 
 let btnR = document.querySelector('button.btnR');
@@ -113,10 +71,6 @@ function left() {
 }
 
 
-
-
-
-
 let im1 = document.querySelector("img#img-5-1");
 let im2 = document.querySelector("img#img-5-2");
 let im3 = document.querySelector("img#img-5-3");
@@ -148,7 +102,6 @@ function up3() {
     im3.style.width = "45%";
     im3.style.filter = 'brightness(100%)';
 }
-
 
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.section');
@@ -253,3 +206,4 @@ document.addEventListener('DOMContentLoaded', function () {
         return currentSection;
     }
 });
+
