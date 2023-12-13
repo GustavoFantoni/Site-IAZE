@@ -170,7 +170,7 @@ body.no-scroll {
 
 /*------------------------------------ SCROLL 2 ------------------------------------*/
     #scrll2{
-        margin-top: 200%;
+        margin-top: 100vh;
         height: 100vh;
         scroll-snap-align: start;
         overflow-y: scroll;
@@ -468,14 +468,14 @@ body.no-scroll {
             }
             .area-menu-actived {
                 position: fixed;
-                right: 5px;
-                top: -11px;
+                right: 0px;
+                top: -15px;
                 display: block;
                 height: 500px;
                 background-color: var(--back-button);
-                width: 50%;
-                border-radius: 25px;
                 z-index: 100;
+                border-bottom-left-radius: 15px;
+                border-bottom: #4e8ebf 8px solid;
             }
             .logo-menu img {
                 display: initial;
@@ -493,11 +493,10 @@ body.no-scroll {
                 color: #ffffff;
                 width: 100%;
                 font-size: 14pt;
-                margin-top: 50px;
                 transition: 300ms;  
                 text-align: left;
-                margin-left: 0px; 
-                margin-right: 0px; 
+                margin: 50px 0 0 0;
+
             }
             li:hover{
                 color: var(--hover-font);
