@@ -212,39 +212,39 @@ body.no-scroll {
 /*------------------------------------ SCROLL 2 ------------------------------------*/
 
 /*------------------------------------ SCROLL 7 ------------------------------------*/
-#scrll3 {
-    height: 100vh;
-    overflow-y: scroll;
-    margin-bottom: 50vh;
-    overflow: hidden;
-    text-align: center;
-}
-.imagens-area5 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
-#img-5-1 {
-    width: 45%;
-    height: 100%;
-    object-fit: cover;
-    transition: 300ms;
-}
-#img-5-2 {
-    width: 27.5%;
-    filter: brightness(50%);
-    height: 100%;
-    object-fit: cover;
-    transition: 300ms;
-}
-#img-5-3 {
-    width: 27.5%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(50%);
-    transition: 300ms;
-}
+    #scrll3 {
+        height: 100vh;
+        overflow-y: scroll;
+        margin-bottom: 50vh;
+        overflow: hidden;
+        text-align: center;
+    }
+    .imagens-area5 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+    #img-5-1 {
+        width: 45%;
+        height: 100%;
+        object-fit: cover;
+        transition: 300ms;
+    }
+    #img-5-2 {
+        width: 27.5%;
+        filter: brightness(50%);
+        height: 100%;
+        object-fit: cover;
+        transition: 300ms;
+    }
+    #img-5-3 {
+        width: 27.5%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(50%);
+        transition: 300ms;
+    }
 /*------------------------------------ SCROLL 7 ------------------------------------*/
 
 
@@ -289,8 +289,6 @@ body.no-scroll {
     .text-obj {
         font-size: 13pt;
     }
-
-
 /*------------------------------------ SCROLL 3 ------------------------------------*/
 
 /*------------------------------------ SCROLL 4 ------------------------------------*/
@@ -314,7 +312,6 @@ body.no-scroll {
         display: flex;
         justify-content: space-between;
     }
-
     .left-objetivos-icons {
         display: flex;
         justify-content: center;
@@ -324,8 +321,6 @@ body.no-scroll {
         width: 100px;
         margin: 10% 2%;
     }
-
-
 /*------------------------------------ SCROLL 5 ------------------------------------*/
 
 
@@ -334,7 +329,6 @@ body.no-scroll {
 
 
 /*------------------------------------ SCROLL 6 ------------------------------------*/
-
     #scrll7 {
         height: 100vh;
         overflow-y: scroll;
@@ -356,7 +350,6 @@ body.no-scroll {
         opacity: 1;
         border-radius: 15px;
     }
-
     .btnL {
         background-color:transparent;
         height: 700px;
@@ -369,7 +362,6 @@ body.no-scroll {
         border-radius: 15px 0 0 15px;
         font-size: 25px;
     }
-
     .btnR {
         background-color:transparent;
         height: 700px;
@@ -386,8 +378,6 @@ body.no-scroll {
         background-color: rgba(75, 72, 72, 0.150);
         transition: 300ms;
     }
-
-
 /*------------------------------------ SCROLL 6 ------------------------------------*/
 
 
@@ -400,11 +390,6 @@ body.no-scroll {
 
 
 /*------------------------------------ SCROLL 8 ------------------------------------*/
-
-
-
-
-
     #scrll8 {
         height: 100vh;
         overflow-y: scroll;
@@ -464,6 +449,10 @@ body.no-scroll {
         
     }
 /*------------------------------------ SCROLL 8 ------------------------------------*/
+
+
+
+
 
 /*------------------------------------ RESPONSIVIDADE ------------------------------------*/
     @media screen and (max-width: 940px) {
@@ -592,7 +581,6 @@ body.no-scroll {
 
     @media screen and (max-width: 650px) {
             /*------------------------------------ SCROLL 1 ------------------------------------*/
-        
             .center-home-logo{
                 width: 100%;
                 display:flex;
@@ -609,9 +597,6 @@ body.no-scroll {
                 margin-top: 25vh;
             }
             /*------------------------------------ SCROLL 1 ------------------------------------*/
-
-
-
 
             /*------------------------------------ SCROLL 2 ------------------------------------*/
 
@@ -654,14 +639,10 @@ body.no-scroll {
 
 
 
-
-
             /*------------------------------------ SCROLL 5 ------------------------------------*/
-
             #scrll6 {
                 background-color: #ffffff;
             }
- 
             .left-objetivos-icons {
                 display: flex;
                 flex-wrap: wrap;
@@ -671,7 +652,6 @@ body.no-scroll {
                 width: 50px;
                 margin: 10% 2%;
             }
-        
             /*------------------------------------ SCROLL 5 ------------------------------------*/
 
 
@@ -683,7 +663,6 @@ body.no-scroll {
                 width: 400px;
                 z-index: -1;
             }
-            
             .btnL {
                 height: 400px;
                 padding: 14px;
@@ -755,9 +734,6 @@ body.no-scroll {
         .btn-act-active {
             right: 80%;
         }
-
-
-
         .tt-sobNos {
             padding-right: 10%;
          }
@@ -775,7 +751,7 @@ body.no-scroll {
         }
         .left-objetivos {
             margin-top: 2vh;
-           }
+        }
         .text-area-objetivos {
             width: 100%;
             margin-left: 5%;
@@ -812,10 +788,6 @@ body.no-scroll {
         .text-area-objetivos::-ms-scrollbar {
             width: 12px; 
         }
-          
-
-
-
         /*------------------------------------ SCROLL 4 ------------------------------------*/
         .container {
             margin-top: 45%;
@@ -830,7 +802,6 @@ body.no-scroll {
             height: 320px;
         }
         /*------------------------------------ SCROLL 4 ------------------------------------*/
-
     }
 
     @media screen and (max-width: 320px) {
@@ -860,10 +831,9 @@ body.no-scroll {
             right: 10px;
             width: 60px;
         }
-       
-       .left-objetivos {
+        .left-objetivos {
         margin-top: 0;
-       }
+        }
        .left-objetivos-icons {
         display: flex;
         flex-wrap: wrap;
@@ -873,7 +843,6 @@ body.no-scroll {
         width: 40px;
         margin: 2% 2%;
         }
-
         .right-section-QS{
             width: 100%;
         }
@@ -887,8 +856,6 @@ body.no-scroll {
         .text-here {
             font-size: 11pt;
         }
-
-
         /*------------------------------------ SCROLL 4 ------------------------------------*/
         .container {
             margin-top: 40%;
@@ -931,7 +898,6 @@ body.no-scroll {
             padding-bottom: 1%;
         }
     }
-
 /*------------------------------------ RESPONSIVIDADE ------------------------------------*/
 
 

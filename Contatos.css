@@ -1,13 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #FFFFFF 50%, var(--cor-fundo) 50%);
+}
+:root {
+    --cor-fundo: #d9f5fc;
+    --segunda: #68a7cf;
+    --fonte-escura: #4e8ebf;
+    --quarta: #add3e6;
+    --back-button: #82c0df;
+  }
+a {
+    text-decoration: none;
+}
+* {
+    font-family: 'Nunito', sans-serif;
+}
 .return {
     position: fixed;
     top: 15px;
     left: 15px;
 }
 .formulary {
-    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-top: 5%;
 }
 .left-form {
     width: 50%;
@@ -15,39 +33,305 @@
 .left-form img {
     width: 80%;
     border-radius: 0 50px 50px 0;
+    object-fit: cover;
 }
-.right-form {
-    width: 50%; 
+
+
+.right-area {
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
-.border {
-    border: 1px solid black; 
-    padding: 5% 1%;
-    width: 70%;
-    margin-left: 15%;
-    text-align: center;
+.left-top {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+
+}
+.icons-social {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 5% 0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.icons-social img{
+    width: 30px;
+}
+.forms p {
+    font-size: 14pt;
+    margin: 0 7%;
+    color: var(--segunda);
+}
+.forms {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 5% 0;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 input {
+    background-color: #d1f4fd;
+    width: 70%;
+    margin:2% 0;
+    padding: 15px;
+    margin-left: 7%;
     border: none;
-    border-bottom: 1px solid black;
-    background-color: transparent;
-    margin: 0px 2px;
-    height: 50px;
+    border-radius: 10px;
 }
 ::placeholder {
-    color: rgba(0, 0, 0, 0.301);
-    margin: 0px 2px;
-
+    color: #4e8ebf;
+}
+.alinha-local {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.local {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 5% 0;
+    font-size: 14pt;
+}
+.local a {
+    margin: 0 20px;
+    color: var(--segunda);
+}
+.local button {
+    background-color: var(--quarta);
+    padding: 10px;
+    width: 80%;
+    font-size: 12pt;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5%;
+}
+.alinha-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.local img {
+    width: 30px;
 }
 
-#name {
+
+.right-top {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.blocks-inline {
+    display: flex;
+}
+.sites {
+    width: 60%;
+    background-color: #ffffff;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: center;
+}
+.sites a {
+    color: var(--segunda);
+    font-size: 14pt;
+}
+.sites img {
+    width: 80px;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 37%;
+    background-color: #ffffff;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.contacts button {
+    border-radius: 10px;
+    width: 90%;
+    height: 50px;
+    margin: 10% 0;
+    font-size: 12pt;
+    transition: 300ms;
+}
+.contacts button:hover {
+    background-color: #ffffff;
+    transition: 300ms;
+    border: 1px solid var(--segunda);
+    color: var(--segunda);
+    padding: 12% 0;
+}   
+.tel {
+    background-color: var(--segunda);
+    border: none;
+    color: #ffffff;
+}
+.whatsapp {
+    background-color: transparent;
+    border: 1px solid var(--segunda);
+    color: var(--segunda);
+}
+.email {
+    background-color: var(--quarta);
+    border: none;
+    color: white;
+}
+.card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.left-card {
     width: 40%;
 }
-#surname {
-    width: 40%;
+.left-card img {
+    width: 90%;
+    margin-top: 5% ;
+    border-radius: 50px;
+    object-fit: cover;
 }
-#email {
-    width: 40%;
+.instagram-name {
+    font-size: 20pt;
+    margin-bottom: 0;
+    color: var(--segunda);
 }
-#message {
-    width: 40%;
+.description {
+    margin: 0;
+    color: #b6b6b6;
+    font-size: 10pt;
+}
+.link-instagram {
+    background-color: var(--quarta);
+    width: 100%;
+    padding: 5% 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 14pt;
+    color: #ffffff;
+    margin-top: 5%;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .sites img {
+        width: 70px;
+    }
+    .sites {
+        width: 50%;
+    }
+    .contacts {
+        width: 47%;
+    }
+}
+@media screen and (max-width: 950px) {
+    .left-form {
+        width: 25%;
+    }
+    .right-area {
+        width: 75%;
+    }
+    .left-form img {
+        width: 90%;
+        border-radius: 0;
+        height: 100%;
+    }
+    .icons-social, .forms, .local {
+        box-shadow: -5px 5px 5px #00000019;
+    }
+}
+@media screen and (max-width: 650px) {
+    
+    .left-form {
+        display: none;
+    }
+    .right-area {
+        width: 95%;
+        margin: 3%;
+    }
+    .icons-social, .forms, .local {
+        box-shadow: -5px 5px 5px #00000019;
+    }
+    .instagram-name {
+        font-size: 15pt;
+    }
+    .description {
+        font-size: 8pt;
+    }
+    .link-instagram {
+        padding: 10% 0;
+        font-size: 12pt;
+    }
+    .local {
+        font-size: 12pt;
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    
+    .contacts, .sites, .card {
+            box-shadow: -5px 5px 5px #00000019;
+    }
+    .right-area {
+        flex-direction: column;
+        justify-content: left;
+        margin-top: 8vh;
+    }
+    .left-top {
+        width: 100%;
+    }
+    
+    .icons-social {
+        padding: 2% 0;
+    }
+    input {
+        padding: 10px;
+    }
+    .local {
+        width: 100%;
+        font-size: 12pt;
+    }
+    .local button {
+        padding: 5px;
+        margin-top: 1%;
+    }
+    .right-top {
+        width: 100%;
+    }
+    .sites {
+        width: 60%;
+        justify-content: center;
+        padding: 0;
+        margin: 10px 0 10px 0;
+    }
+    .sites p {
+        margin: 1px;
+    }
+    .sites a {
+        margin: 10px;
+    }
+    .sites img {
+        width: 30px;
+    }
+    .contacts {
+        width: 37%;
+        margin: 10px ;
+    }
+
 }
