@@ -14,3 +14,20 @@ function active() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup");
+    popup.style.display = "block"; // Exibir o popup ao carregar a página
+
+    const closePopupBtn = document.getElementById("closePopupBtn");
+
+    closePopupBtn.addEventListener("click", function () {
+        popup.style.display = "none";
+    });
+
+    // Fechar o popup se o usuário clicar fora da área do popup
+    window.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});

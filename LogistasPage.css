@@ -4,54 +4,74 @@
     top: 25px;
     left: 15px;
 }
-.link-logistas {
-    width: 100%;
-    display: flex;
-    line-height: 100vh;
-    justify-content: space-around;
-}
-.link-logistas {
-    width: 100%;
-}
-.link-logistas img {
-    width: 400px;
-}
-.info {
-    width: 100%;
+
+
+
+
+.popup {
+    display: none;
     position: fixed;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #82c0df;
-    color: #ffffff;
-    text-align: center;
-    font-size: 16pt;
-    font-weight: bold;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width: 1100px) {
-    .return {
-        position: fixed;
-        top: 20px;
-        left: 15px;
-    }
-    .return img {
-        width: 50px;
-    }
-    .link-logistas img {
-        width: 300px;
-    }
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.link-logistas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.link-logistas a {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: -10px 5px 10px rgb(230, 230, 230);
+    margin: 2% 30%;
+    border-radius: 15px;
+    padding: 15px;
+    color: rgb(158, 158, 158);
+    font-size: 14pt;
+}
+.info {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #dff5ff;
+    color: #3e92bd;
+    font-weight: 700;
+    font-size: 14pt;
 }
 @media screen and (max-width: 650px) {
-    .link-logistas img {
-        width: 180px;
+
+    .link-logistas {
+        margin-top: 30%;
     }
-}
-@media screen and (max-width: 400px) {
-    .link-logistas img {
-        width: 120px;
-    }
-    .info{
-        font-size: 14pt;
+    .link-logistas a {
+        margin: 5%;
     }
 }
