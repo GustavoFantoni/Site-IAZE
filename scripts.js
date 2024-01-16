@@ -3,8 +3,7 @@
 
 let menu = document.querySelector('ul.menu-content');
 let btn = document.querySelector('button.btn-act');
-let overlay = document.getElementById('overlay'); // Adicionado para referenciar o overlay
-
+let overlay = document.getElementById('overlay');
 btn.addEventListener('click', active);
 
 function active() {
@@ -118,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('touchend', handleTouchEnd);
     window.addEventListener('scroll', handleScroll);
 
-    // Adiciona chamada para handleScroll ao carregar a página
     handleScroll();
 
     function handleWheel(event) {
@@ -180,11 +178,9 @@ document.addEventListener('DOMContentLoaded', function () {
             topoButton.style.display = 'none';
         }
     }
-
     topoButton.addEventListener('click', function () {
         sections[0].scrollIntoView({ behavior: 'smooth' });
     });
-
     function scrollToSection(direction) {
         let currentSection = getCurrentSection();
 
@@ -196,7 +192,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         sections[currentSection].scrollIntoView({ behavior: 'smooth' });
     }
-
     function getCurrentSection() {
         let currentSection = 0;
         const scrollPosition = window.scrollY || window.pageYOffset;
@@ -207,7 +202,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 currentSection = i;
             }
         }
-
         return currentSection;
     }
 });

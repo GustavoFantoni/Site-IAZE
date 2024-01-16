@@ -16,18 +16,16 @@ function active() {
 
 document.addEventListener("DOMContentLoaded", function () {
     const popup = document.getElementById("popup");
-    popup.style.display = "block"; // Exibir o popup ao carregar a página
+    popup.style.display = "block";
 
-    const closePopupBtn = document.getElementById("closePopupBtn");
-
-    closePopupBtn.addEventListener("click", function () {
+    const close = document.getElementById("closePopupBtn");
+    close.addEventListener("click", function () {
         popup.style.display = "none";
-    });
-
-    // Fechar o popup se o usuário clicar fora da área do popup
+    })
+})
     window.addEventListener("click", function (event) {
         if (event.target === popup) {
             popup.style.display = "none";
         }
     });
-});
+
