@@ -27,7 +27,6 @@ a {
     justify-content: space-around;
     margin-top: 5%;
 }
-
 .left-form {
     width: 50%;
 }
@@ -36,8 +35,6 @@ a {
     border-radius: 0 50px 50px 0;
     object-fit: cover;
 }
-
-
 .right-area {
     width: 50%;
     display: flex;
@@ -75,7 +72,6 @@ a {
     display: flex;
     flex-direction: column;
 }
-
 input {
     background-color: #d1f4fd;
     width: 70%;
@@ -143,8 +139,6 @@ textarea {
 .local img {
     width: 30px;
 }
-
-
 .right-top {
     width: 45%;
     display: flex;
