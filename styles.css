@@ -54,7 +54,7 @@ body.no-scroll {
 
 
 /*------------------------------------ SCROLL 1 ------------------------------------*/
-    #scrll1-1 {
+    #scrll1 {
         scroll-snap-align: start;
         overflow-y: scroll;
         height: 100vh;
