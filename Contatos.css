@@ -27,6 +27,7 @@ a {
     justify-content: space-around;
     margin-top: 5%;
 }
+
 .left-form {
     width: 50%;
 }
@@ -74,6 +75,7 @@ a {
     display: flex;
     flex-direction: column;
 }
+
 input {
     background-color: #d1f4fd;
     width: 70%;
@@ -82,6 +84,24 @@ input {
     margin-left: 7%;
     border: none;
     border-radius: 10px;
+    font-size: 12pt;
+}
+textarea {
+    border-radius: 10px;
+    background-color: #d1f4fd;
+    margin-left: 7%;
+    padding: 15px;
+    width: 70%;
+    border: none;
+}
+.send {
+    padding: 10px 30px;
+    background-color: #add3e6;
+    border: none;
+    border-radius: 10px;
+    margin-left: 7%;
+    color: white;
+    font-size: 12pt;
 }
 ::placeholder {
     color: #4e8ebf;

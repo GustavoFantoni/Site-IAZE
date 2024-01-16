@@ -31,11 +31,17 @@
                     <a href="#"><img src="Images/instagram-logo.svg" alt=""></a>
                 </div>
                 <div class="forms">
-                    <p class="info">Envie-nos um e-mail</p>
-                    <input type="text" placeholder="Primeiro Nome" id="name">
-                    <input type="text" placeholder="Sobrenome" id="surname"> 
-                    <input type="email" name="email-user" id="email" placeholder="E-mail">
-                    <input type="text" id="message" placeholder="Sua Mensagem">
+                    <form action="https://api.staticforms.xyz/submit" method="post" >
+                        
+                        <p class="info">Envie-nos um e-mail</p>
+                        <input type="text" name="name" placeholder="Seu Nome" autocomplete="off" required>
+                        <input type="text" name="email" placeholder="Email" required/>
+                        <textarea name="message"></textarea><br>
+                        <button type="submit" class="send">Enviar</button>
+
+                        <input type="hidden" name="accessKey" value="edcbb042-0d9c-4e9d-8b1b-2d75d021f6cc">
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Obrigado.html">
+                    </form>
                 </div>
         
                 <div class="alinha-local">
