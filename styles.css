@@ -3,13 +3,14 @@
 
 
 /*------------------------------------ PRÉ DEFINIÇÕES ------------------------------------*/
-body {
+body {  
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #FFFFFF 50%, var(--cor-fundo) 50%);
     font-family: 'Nunito', sans-serif;
     overflow: hidden;
     scroll-behavior: smooth;
+    
 }
 a {
     text-decoration: none;
@@ -41,6 +42,10 @@ ul {
 body.no-scroll {
     overflow: hidden;
 }
+::selection {
+    color: #4e8ebf;
+}
+
 
 /*------------------------------------ PRÉ DEFINIÇÕES ------------------------------------*/
 
