@@ -72,9 +72,9 @@ a {
     display: flex;
     flex-direction: column;
 }
-input {
+input, textarea {
     background-color: #d1f4fd;
-    width: 70%;
+    width: 80%;
     margin:2% 0;
     padding: 15px;
     margin-left: 7%;
@@ -82,14 +82,7 @@ input {
     border-radius: 10px;
     font-size: 12pt;
 }
-textarea {
-    border-radius: 10px;
-    background-color: #d1f4fd;
-    margin-left: 7%;
-    padding: 15px;
-    width: 70%;
-    border: none;
-}
+
 .send {
     padding: 10px 30px;
     background-color: #add3e6;
@@ -101,43 +94,6 @@ textarea {
 }
 ::placeholder {
     color: #4e8ebf;
-}
-.alinha-local {
-    width: 100%;
-    display: flex;
-    justify-content: right;
-}
-.local {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 20px;
-    width: 100%;
-    padding: 5% 0;
-    font-size: 14pt;
-}
-.local a {
-    margin: 0 20px;
-    color: var(--segunda);
-}
-.local button {
-    background-color: var(--quarta);
-    padding: 10px;
-    width: 80%;
-    font-size: 12pt;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
-    margin-top: 5%;
-}
-.alinha-img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.local img {
-    width: 30px;
 }
 .right-top {
     width: 45%;
@@ -205,15 +161,16 @@ textarea {
     color: white;
 }
 .card {
-    width: 100%;
+    width: 93%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #ffffff;
     border-radius: 20px;
     margin-top: 10px;
+    padding: 2%;
 }
 .left-card {
-    width: 40%;
+    width: 25%;
 }
 .left-card img {
     width: 90%;
@@ -224,6 +181,7 @@ textarea {
 .instagram-name {
     font-size: 20pt;
     margin-bottom: 0;
+    margin-top: 5% ;
     color: var(--segunda);
 }
 .description {
@@ -292,9 +250,7 @@ textarea {
         padding: 10% 0;
         font-size: 12pt;
     }
-    .local {
-        font-size: 12pt;
-    }
+
 }
 @media screen and (max-width: 500px) {
     
@@ -316,14 +272,6 @@ textarea {
     }
     input {
         padding: 10px;
-    }
-    .local {
-        width: 100%;
-        font-size: 12pt;
-    }
-    .local button {
-        padding: 5px;
-        margin-top: 1%;
     }
     .right-top {
         width: 100%;
