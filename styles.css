@@ -13,7 +13,6 @@ a {
     text-decoration: none;
 }
 ul {
-
     padding: 0;
 }
 :root {
@@ -529,12 +528,32 @@ body.no-scroll {
                 left: 20%;
                 right: 20%;
                 font-family: 'Nunito', sans-serif;
-                font-size: 14pt;
+                font-size: 15pt;
+                font-weight: 600;
                 color: #fff;
-                background-color: var(--back-button);
                 padding: 15px 25px;
                 border: none;
+                background-size: 200% 200%;
+                background-color: #99fff7;
+                background-image: radial-gradient(
+                at 65% 89%,
+                rgb(188, 239, 255) 0px,
+                transparent 50%
+                ),
+                radial-gradient(at 68% 76%, rgb(201, 232, 241) 0px, transparent 50%),
+                radial-gradient(at 52% 39%, rgb(184, 228, 241) 0px, transparent 50%),
+                radial-gradient(at 12% 37%, rgb(239, 223, 247) 0px, transparent 50%),
+                radial-gradient(at 34% 9%, rgb(158, 220, 253) 0px, transparent 50%),
+                radial-gradient(at 89% 18%, rgb(166, 218, 233) 0px, transparent 50%),
+                radial-gradient(at 36% 37%, rgb(174, 226, 238) 0px, transparent 50%);
+                background-position: left;
+                cursor: pointer;
                 border-radius: 30px;
+                transition: all 300ms;
+            }
+            .button:hover {
+                background-position: right;
+            }
             }
             .icon-cole {
                 display: none;
@@ -635,7 +654,7 @@ body.no-scroll {
                 font-size: 20px;
             }
             /*------------------------------------ SCROLL 4 ------------------------------------*/
-        }
+        
 
     @media screen and (max-width: 650px) {
             /*------------------------------------ SCROLL 1 ------------------------------------*/
