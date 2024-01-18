@@ -6,6 +6,8 @@ body {
 }
 a {
     text-decoration: none;
+    color: #4e8ebf;
+    font-size: 14pt;
 }
 ul {
     padding: 0;
