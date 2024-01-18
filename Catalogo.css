@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');  
+body {  
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+:root {
+    --botoes: #68a7cf;
+    --title: #82c0df;
+}
+.return {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+.inicio {
+    width: 90%;
+    margin: 5%;  
+    text-align: center;  
+    color: var(--title);
+}
+.lines {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.lines img {
+    width: 98%;
+    margin-bottom: 1%;
+}
+.image-item {
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s, transform 2s;
+}
+
+.image-item img {
+    width: 98%;
+    object-fit: cover;
+}
+
+.Redirecionamento {
+    margin-top: 100px;
+    margin-bottom: 300px;
+    width: 100%;
+    text-align: center;
+}
+.Redirecionamento h2 {
+    color: var(--title);
+}
+.Redirecionamento button {
+    padding: 20px 50px;
+    background-color: var(--botoes);
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 12pt;
+    font-family:  'Nunito', sans-serif;
+}
+@media screen and (max-width: 700px) {
+    .inicio {
+        margin: 10% 5%;
+    }
+    h1 {
+        font-size: 18pt;
+    }
+    .lines {
+        display: block;
+    }
+    .lines img {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-bottom: 1%;
+    }
+}

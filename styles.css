@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');   
 /*------------------------------------ PRÉ DEFINIÇÕES ------------------------------------*/
 body {  
     margin: 0;
@@ -98,7 +95,20 @@ body.no-scroll {
         display: none;
         width: 70px;
     }
-    .icon-contacts img, .icon-locale img, .icon-logists img {
+    .mobileColections {
+        display: none;
+    }
+    .item-navbar-COLECOES {
+        background-color: var(--hover-font);
+        border-radius: 15px; 
+        color: #fff;
+        padding: 0px 15px;
+    }
+    .item-navbar-COLECOES:hover {
+        color: #fff;
+        background-color: var(--botoes);
+    }
+    .icon-cole img, .icon-contacts img, .icon-locale img, .icon-logists img {
         display: none;
     }
     .center-home-logo{
@@ -217,7 +227,7 @@ body.no-scroll {
     }
 /*------------------------------------ SCROLL 2 ------------------------------------*/
 
-/*------------------------------------ SCROLL 7 ------------------------------------*/
+/*------------------------------------ SCROLL 3 ------------------------------------*/
     #scrll3 {
         margin-top: 200vh;
         height: 100vh;
@@ -252,11 +262,11 @@ body.no-scroll {
         filter: brightness(50%);
         transition: 300ms;
     }
-/*------------------------------------ SCROLL 7 ------------------------------------*/
-
-
-
 /*------------------------------------ SCROLL 3 ------------------------------------*/
+
+
+
+/*------------------------------------ SCROLL 4 ------------------------------------*/
     #scrll4 {
         margin-top: 200vh;
         height: 100vh;
@@ -297,9 +307,9 @@ body.no-scroll {
     .text-obj {
         font-size: 13pt;
     }
-/*------------------------------------ SCROLL 3 ------------------------------------*/
-
 /*------------------------------------ SCROLL 4 ------------------------------------*/
+
+/*------------------------------------ SCROLL 5 ------------------------------------*/
     #scrll5{
         margin-top: 200vh;
         height: 100vh;
@@ -309,10 +319,10 @@ body.no-scroll {
         display: flex;
         justify-content: space-between;
     }
-/*------------------------------------ SCROLL 4 ------------------------------------*/
-
-
 /*------------------------------------ SCROLL 5 ------------------------------------*/
+
+
+/*------------------------------------ SCROLL 6 ------------------------------------*/
     #scrll6 {
         margin-top: 200vh;
         height: 100vh;
@@ -331,14 +341,14 @@ body.no-scroll {
         width: 100px;
         margin: 10% 2%;
     }
-/*------------------------------------ SCROLL 5 ------------------------------------*/
-
-
-
-
-
-
 /*------------------------------------ SCROLL 6 ------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------ SCROLL 7 ------------------------------------*/
     #scrll7 {
         margin-top: 200vh;
         height: 100vh;
@@ -388,7 +398,7 @@ body.no-scroll {
         background-color: rgba(75, 72, 72, 0.150);
         transition: 300ms;
     }
-/*------------------------------------ SCROLL 6 ------------------------------------*/
+/*------------------------------------ SCROLL 7 ------------------------------------*/
 
 
 
@@ -493,7 +503,26 @@ body.no-scroll {
             }
             .logo-menu img {
                 display: initial;
-            }    
+            } 
+            .item-navbar-COLECOES {
+                display: none;
+            }   
+            .mobileColections {
+                display: initial;
+                position: fixed;
+                top: 30px;
+                left: 20px;
+                font-family: 'Nunito', sans-serif;
+                font-size: 12pt;
+                color: #fff;
+                background-color: var(--back-button);
+                padding: 10px 15px;
+                border: none;
+                border-radius: 10px;
+            }
+            .icon-cole {
+                display: none;
+            }
             .icon-contacts img, .icon-locale img, .icon-logists img {
                 display: initial;
                 margin-left: 10%;
