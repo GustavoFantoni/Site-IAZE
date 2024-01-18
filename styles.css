@@ -13,7 +13,6 @@ a {
     text-decoration: none;
 }
 ul {
-
     padding: 0;
 }
 :root {
@@ -552,7 +551,6 @@ body.no-scroll {
                 border-radius: 30px;
                 transition: all 300ms;
             }
-
             .button:hover {
                 background-position: right;
             }
@@ -664,15 +662,12 @@ body.no-scroll {
                 display:flex;
                 justify-content: center;
             }
-            .logo{
-                font-size: 60px;
-            }
             .right-area-home{
                 bottom: 20px;
                 right: 20px;
             }
             .center-home-logo{
-                margin-top: 25vh;
+                margin-top: 20vh;
             }
             /*------------------------------------ SCROLL 1 ------------------------------------*/
 
@@ -805,9 +800,9 @@ body.no-scroll {
     }
 
     @media screen and (max-width: 450px) {
-          .logo img{
+        .logo img{
               width: 300px;
-          }
+        }
         .area-menu-actived {
             width: 70%;   
             height: 500px;
