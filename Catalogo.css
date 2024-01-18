@@ -16,9 +16,20 @@ body {
 }
 .inicio {
     width: 90%;
-    margin: 5%;  
+    margin: 10%;  
     text-align: center;  
+}
+.title {
+    font-size: 50pt;
     color: var(--title);
+}
+.sub {
+    color: #f079588e;
+}
+.inicio img {
+    width: 50px;
+    position: absolute;
+    left: 10px;
 }
 .lines {
     display: flex;
@@ -63,10 +74,14 @@ body {
 }
 @media screen and (max-width: 700px) {
     .inicio {
-        margin: 10% 5%;
+        margin: 30% 5%;
     }
-    h1 {
-        font-size: 18pt;
+    .title {
+        font-size: 30pt;
+        color: var(--title);
+    }
+    .sub {
+        font-size: 16pt;
     }
     .lines {
         display: block;
