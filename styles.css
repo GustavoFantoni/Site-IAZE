@@ -524,12 +524,12 @@ body.no-scroll {
                 background-color: #99fff7;
                 background-image: radial-gradient(
                 at 65% 89%,
-                rgb(181, 210, 219) 0px,
+                rgb(195, 237, 250) 0px,
                 transparent 50%
                 ),
-                radial-gradient(at 68% 76%, rgb(201, 232, 241) 0px, transparent 50%),
+                radial-gradient(at 68% 76%, rgb(156, 233, 255) 0px, transparent 50%),
                 radial-gradient(at 52% 39%, rgb(195, 228, 238) 0px, transparent 50%),
-                radial-gradient(at 12% 37%, rgb(239, 223, 247) 0px, transparent 50%),
+                radial-gradient(at 12% 37%, rgb(223, 238, 247) 0px, transparent 50%),
                 radial-gradient(at 34% 9%, rgb(145, 201, 231) 0px, transparent 50%),
                 radial-gradient(at 89% 18%, hsla(193, 100%, 74%, 1) 0px, transparent 50%),
                 radial-gradient(at 36% 37%, rgb(198, 233, 241) 0px, transparent 50%);
